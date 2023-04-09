@@ -1,0 +1,43 @@
+.section {
+    background-color: rgb(39, 39, 39);
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.left {
+    flex-basis: 50%;
+    flex-direction: column;
+}
+
+.right {
+    flex-basis: 50%;
+    position: relative;
+
+    & > * {
+        &:nth-child(1) {
+            top: 180px;
+            right: 200px;
+        }
+        &:nth-child(2) {
+            top: 0;
+            right: 100px;
+        }
+        &:nth-child(3) {
+            top: 0;
+            right: 300px;
+        }
+        &:nth-child(4) {
+            top: 180px;
+            right: 0;
+        }
+    }
+}
+
+.img-container {
+    position: relative;
+    flex-basis: 20vh;
+    width: 100%;
+}
+.content {
+    color: white;
+}

@@ -1,0 +1,23 @@
+.header {
+    background-color: aliceblue;
+    align-items: stretch;
+}
+
+.img-container {
+    position: relative;
+    flex-basis: 20%;
+}
+
+.nav {
+    flex-direction: column;
+    height: 5rem;
+    justify-content: center;
+    ul {
+        gap: 50px;
+    }
+}
+
+.nav-link {
+    cursor: pointer;
+    font-weight: bold;
+}

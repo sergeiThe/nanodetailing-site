@@ -1,0 +1,23 @@
+.section,
+.header,
+.footer {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 130rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.centered {
+    display: block;
+    text-align: center;
+    margin: auto;
+    max-width: 50rem;
+}

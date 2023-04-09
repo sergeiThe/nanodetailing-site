@@ -1,0 +1,65 @@
+.btn {
+    background: linear-gradient(to bottom, #6f0000, #0000006a);
+    padding: 1.5rem 3rem;
+    border: none;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease-in;
+
+    &:hover {
+        background: linear-gradient(to bottom, #6f0000, #6f0000);
+    }
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+.hexagon-link {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: #ffffff;
+
+    height: 120px * 2;
+    width: 100px * 2;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    position: absolute;
+    z-index: 2;
+
+    &::after {
+        content: " ";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 97%;
+        height: 97%;
+        transform: translate(-50%, -50%);
+        clip-path: polygon(
+            50% 0%,
+            100% 25%,
+            100% 75%,
+            50% 100%,
+            0% 75%,
+            0% 25%
+        );
+
+        background-color: rgba(163, 0, 0, 0.724);
+        z-index: 2;
+    }
+
+    a {
+        z-index: 3;
+    }
+}

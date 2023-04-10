@@ -37,21 +37,24 @@ const Header = () => {
   })
 
   return (
-    <header className={`header flex ${styles.header}`}>
-      <div className={styles["img-container"]}>
-        <Image
-          src={'/images/logo.png'}
-          fill
-          style={{ objectFit: 'contain', objectPosition: 'left' }}
-          alt='logo'
-          quality={75}
-        />
+    <header className={`header ${styles.header}`}>
+      <div className='container flex'>
+
+        <div className={styles["img-container"]}>
+          <Image
+            src={'/images/logo.png'}
+            fill
+            style={{ objectFit: 'contain', objectPosition: 'left' }}
+            alt='logo'
+            quality={75}
+          />
+        </div>
+        <nav className={`${styles.nav} flex`}>
+          <ul className='flex'>
+            {anchorLinks}
+          </ul>
+        </nav>
       </div>
-      <nav className={`${styles.nav} flex`}>
-        <ul className='flex'>
-          {anchorLinks}
-        </ul>
-      </nav>
     </header>
   )
 }

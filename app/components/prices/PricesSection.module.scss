@@ -1,5 +1,17 @@
 .section {
+    border-top: 3px solid rgba(122, 122, 122, 0.075);
     padding-top: 8rem;
     padding-bottom: 8rem;
-    background-color: aqua;
+    background: white;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.bg {
+    z-index: -1;
+    color: #c20000;
 }

@@ -1,7 +1,11 @@
+@import "../../../styles/mixins.scss";
 .section {
-    background-color: rgb(39, 39, 39);
+    background: rgb(39, 39, 39);
     padding-top: 8rem;
     padding-bottom: 8rem;
+    height: 100vh;
+
+    z-index: 10;
 }
 
 .left {
@@ -12,22 +16,30 @@
 .right {
     flex-basis: 50%;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hexagon-container {
+    position: relative;
 
     & > * {
+        transform: translateY(-50%);
         &:nth-child(1) {
-            top: 180px;
+            top: 90px;
             right: 200px;
         }
         &:nth-child(2) {
-            top: 0;
+            top: -90px;
             right: 100px;
         }
         &:nth-child(3) {
-            top: 0;
+            top: -90px;
             right: 300px;
         }
         &:nth-child(4) {
-            top: 180px;
+            top: 90px;
             right: 0;
         }
     }

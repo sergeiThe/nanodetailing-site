@@ -3,6 +3,9 @@
 .footer {
     padding-left: 5rem;
     padding-right: 5rem;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
 }
 
 .container {

@@ -1,15 +1,43 @@
+'use client'
 import React from 'react'
 import styles from "./PricesSection.module.scss"
+import Image from 'next/image';
+
+class PricesLink {
+
+  name: string;
+  constructor(name: string) {
+    this.name = name
+  }
+}
+
+const prices = [
+  "TESLA",
+  "NIO",
+  "BYD",
+  "VOYAH",
+  "CITROEN DS7"
+]
 
 const PricesSection = () => {
-    const links = "here will be links"
+  const links = prices.map((p: string) => {
+    return (
+      <li key={p}>
+        <button className='btn' onClick={() => { console.log("See prices...") }}>{p}</button>
+      </li>
+    )
+  })
   return (
     <section className={`section ${styles.section}`}>
+
+      <div className='container'>
+
         <h2 className='centered'>Faste priser</h2>
-        <p className='centered'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem distinctio laudantium illo officia quos ipsum facere rerum, non, in vitae earum tempora sed molestias. Similique quo esse maxime illo, dolore ratione cupiditate aperiam temporibus impedit quaerat aliquid odit consequuntur voluptatum accusamus neque. Quod deserunt, error a cum sapiente voluptate nisi.</p>
-        <ul>
-            {links}
+        <p className='centered'>Vi har faste priser for enkelte bilmerker. Er ikke bilen din på lista, ta kontakt med oss</p>
+        <ul className={styles.list}>
+          {links}
         </ul>
+      </div>
     </section>
   )
 }

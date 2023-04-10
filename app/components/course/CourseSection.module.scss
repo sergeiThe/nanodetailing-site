@@ -1,3 +1,4 @@
+@import "../../../styles/mixins.scss";
 .section {
     background-color: rgb(56, 56, 56);
     padding-top: 10rem;
@@ -6,6 +7,12 @@
 
 .container {
     gap: 15rem;
+    display: flex;
+
+    @include respond(tablet) {
+        flex-direction: column;
+        gap: 0;
+    }
 }
 
 .left {
@@ -23,13 +30,13 @@
 
     & > * {
         &:nth-child(1) {
-            top: 30px;
+            top: 26px;
             left: 0px;
         }
 
         &:nth-child(2) {
-            top: -30px;
-            left: 100px;
+            top: -26px;
+            left: 105px;
         }
     }
 }
@@ -38,10 +45,14 @@
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     background-color: rgb(255, 255, 255);
 
-    height: 120px * 2;
-    width: 100px * 2;
+    height: 300px;
+    width: 250px;
 
     position: relative;
+
+    @include respond(tablet) {
+        display: none;
+    }
 
     &::after {
         content: " ";
@@ -60,7 +71,7 @@
             0% 25%
         );
 
-        background-color: rgba(255, 12, 12, 0.377);
+        background-color: rgba(255, 255, 255, 0.123);
         z-index: 2;
     }
 }

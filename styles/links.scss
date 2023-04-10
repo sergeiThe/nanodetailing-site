@@ -2,7 +2,7 @@
     background: linear-gradient(to bottom, #6f0000, #0000006a);
     padding: 1.5rem 3rem;
     margin-top: 2rem;
-    display: block;
+    // display: block;
     border: none;
 
     color: white;
@@ -26,6 +26,16 @@
 
     height: 120px * 2;
     width: 100px * 2;
+
+    @include respond(tablet) {
+        height: 200px;
+        width: 170px;
+    }
+
+    @include respond(mobile) {
+        height: 150px;
+        width: 120px;
+    }
 
     text-align: center;
     display: flex;
@@ -63,5 +73,6 @@
 
     a {
         z-index: 3;
+        font-size: 2.5rem;
     }
 }

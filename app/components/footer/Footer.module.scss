@@ -1,6 +1,17 @@
+@import "../../../styles/mixins.scss";
 .footer {
     background-color: bisque;
     padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+
+    @include respond(mobile) {
+        flex-direction: column-reverse;
+    }
 }
 
 .img-container {
@@ -16,4 +27,22 @@
 
 .right {
     flex-basis: 50%;
+    @include respond(mobile) {
+        flex-basis: 200px;
+    }
+}
+
+.logo {
+    object-position: right;
+
+    @include respond(mobile) {
+        object-position: left;
+    }
+}
+
+.rights {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
 }

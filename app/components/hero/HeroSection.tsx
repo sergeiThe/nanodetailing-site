@@ -13,17 +13,18 @@ const HeroSection = () => {
             <div className={styles.overlay}>
 
             </div>
-            <div className='container flex'>
+            <div className={`container ${styles.container}`}>
 
                 <div className={`${styles.left} flex`}>
                     <div className={styles["img-container"]}>
                         <Image
                             alt='logo'
                             fill
-                            style={{ objectFit: 'contain', objectPosition: 'left' }}
+                            style={{ objectFit: 'contain' }}
                             src={'/images/logo.png'}
                             quality={75}
                             priority
+                            className={styles.logo}
                         />
                     </div>
                     <div className={styles.content}>
@@ -35,7 +36,7 @@ const HeroSection = () => {
                             løsninger og kompetanse for at du skal kunne oppnå de beste
                             resultatene så trygt og effektivt som mulig.
                         </p>
-                        <button className="btn">Ta kontakt</button>
+                        <button className={`btn ${styles.btn}`}>Ta kontakt</button>
                     </div>
                 </div>
                 <div className={styles.right}>
@@ -45,13 +46,13 @@ const HeroSection = () => {
                             <a onClick={() => { console.log("Hexagon link clicked") }}>Kontakt</a>
                         </div>
                         <div className="hexagon-link">
-                            <a onClick={() => { console.log("Hexagon link clicked") }}>Kontakt</a>
+                            <a onClick={() => { console.log("Hexagon link clicked") }}>Tjenester</a>
                         </div>
                         <div className="hexagon-link">
-                            <a onClick={() => { console.log("Hexagon link clicked") }}>Kontakt</a>
+                            <a onClick={() => { console.log("Hexagon link clicked") }}>Faste priser</a>
                         </div>
                         <div className="hexagon-link">
-                            <a onClick={() => { console.log("Hexagon link clicked") }}>Kontakt</a>
+                            <a onClick={() => { console.log("Hexagon link clicked") }}>Hendlex kurs</a>
                         </div>
                     </div>
                 </div>

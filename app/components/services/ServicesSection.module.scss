@@ -1,3 +1,4 @@
+@import "../../../styles/mixins.scss";
 .section {
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -20,6 +21,10 @@
     width: 2px;
     height: 90%;
     background-color: rgba(0, 0, 0, 0.21);
+
+    @include respond(mobile) {
+        display: none;
+    }
 }
 
 .container {
@@ -41,6 +46,11 @@
     min-height: 700px;
     width: 600px;
     margin: 5rem auto;
+
+    @include respond(mobile) {
+        width: 300px;
+        min-height: 500px;
+    }
 
     & > * {
         &:nth-child(1) {
@@ -70,6 +80,76 @@
         &:nth-child(7) {
             top: 360px;
             right: 300px;
+        }
+
+        @include respond(tablet) {
+            $x: 89px;
+            $y: 78px;
+
+            transform: translateX(-27%);
+            &:nth-child(1) {
+                top: $y * 2;
+                right: $x * 2;
+            }
+            &:nth-child(2) {
+                top: 0;
+                right: $x;
+            }
+            &:nth-child(3) {
+                top: 0;
+                right: $x * 3;
+            }
+            &:nth-child(4) {
+                top: $y * 2;
+                right: 0;
+            }
+            &:nth-child(5) {
+                top: $y * 2;
+                right: $x * 4;
+            }
+            &:nth-child(6) {
+                top: $y * 4;
+                right: $x;
+            }
+            &:nth-child(7) {
+                top: $y * 4;
+                right: $x * 3;
+            }
+        }
+
+        @include respond(mobile) {
+            $x: 63px;
+            $y: 58px;
+
+            transform: translateX(0);
+            &:nth-child(1) {
+                top: $y * 2;
+                right: $x * 2;
+            }
+            &:nth-child(2) {
+                top: 0;
+                right: $x;
+            }
+            &:nth-child(3) {
+                top: 0;
+                right: $x * 3;
+            }
+            &:nth-child(4) {
+                top: $y * 2;
+                right: 0;
+            }
+            &:nth-child(5) {
+                top: $y * 6;
+                right: $x * 2;
+            }
+            &:nth-child(6) {
+                top: $y * 4;
+                right: $x;
+            }
+            &:nth-child(7) {
+                top: $y * 4;
+                right: $x * 3;
+            }
         }
     }
 }

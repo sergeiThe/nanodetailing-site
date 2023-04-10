@@ -6,6 +6,11 @@
     box-sizing: border-box;
     position: relative;
     z-index: 1;
+
+    @include respond(mobile) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
 
 .container {

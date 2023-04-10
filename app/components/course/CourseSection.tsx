@@ -23,7 +23,7 @@ const CourseSection = () => {
 
   return (
     <section className={`section ${styles.section}`}>
-      <div className={`${styles.container} flex container`}>
+      <div className={`${styles.container} container`}>
 
         <div className={styles.left}>
           <h2>Hendlex kurs</h2>

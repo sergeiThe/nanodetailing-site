@@ -1,12 +1,12 @@
 @mixin respond($bp) {
     @if $bp == mobile {
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 700px) {
             @content;
         }
     }
 
     @if $bp == tablet {
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: 1080px) {
             @content;
         }
     }

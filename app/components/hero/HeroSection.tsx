@@ -7,6 +7,12 @@ import Image from 'next/image';
 const HeroSection = () => {
     return (
         <section className={`section flex ${styles.section}`}>
+            <video className={styles.bg} autoPlay playsInline loop muted preload='metadata'>
+                <source src='/video/video.mp4' type='video/mp4' />
+            </video>
+            <div className={styles.overlay}>
+
+            </div>
             <div className='container flex'>
 
                 <div className={`${styles.left} flex`}>

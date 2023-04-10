@@ -51,8 +51,15 @@
         width: 300px;
         min-height: 500px;
     }
+    // perspective: 1000px;
 
     & > * {
+        transition: all 0.3s;
+        &:hover {
+            transform: scale(1.2);
+            z-index: 5;
+        }
+
         &:nth-child(1) {
             top: 180px;
             right: 200px;
@@ -85,6 +92,9 @@
         @include respond(tablet) {
             $x: 89px;
             $y: 78px;
+            &:hover {
+                transform: translateX(-27%) scale(1.1);
+            }
 
             transform: translateX(-27%);
             &:nth-child(1) {

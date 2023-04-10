@@ -1,8 +1,9 @@
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from './Header.module.scss'
 import Image from 'next/image'
 import { Link } from 'react-scroll';
+import { useState } from 'react';
 
 
 class LinkStructure {
@@ -27,6 +28,23 @@ const navLinks: LinkStructure[] = [
 const Header = () => {
 
   // open nav
+  const [show, setShow] = useState<boolean>(false)
+
+  const navHandler = () => {
+    if (window.scrollY < 300) {
+      setShow(false)
+    } else {
+      setShow(true)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', navHandler)
+    return () => {
+      window.removeEventListener('scroll', navHandler)
+    }
+  }, [])
+
 
   const anchorLinks = navLinks.map(link => {
     return (
@@ -37,8 +55,8 @@ const Header = () => {
   })
 
   return (
-    <header className={`header ${styles.header}`}>
-      <div className='container flex'>
+    <header className={`header ${styles.header} ${show && 'show-navbar'}`}>
+      <div className={`container ${styles.container}`}>
 
         <div className={styles["img-container"]}>
           <Image

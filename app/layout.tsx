@@ -1,6 +1,6 @@
 import "../styles/index.scss"
 import Header from "./components/header/Header"
-import { Secular_One } from "@next/font/google"
+import { Secular_One } from "next/font/google"
 
 export const metadata = {
   title: 'Create Next App',

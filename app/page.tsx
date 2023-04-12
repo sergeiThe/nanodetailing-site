@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import HeroSection from './components/hero/HeroSection'
 import ServicesSection from './components/services/ServicesSection'
@@ -5,7 +6,8 @@ import PricesSection from './components/prices/PricesSection'
 import CourseSection from './components/course/CourseSection'
 import ReviewSection from './components/reviews/ReviewSection'
 import Footer from './components/footer/Footer'
-import ContactContextProvider from './store/context'
+import ContactContextProvider from './store/contact-context'
+import Modal from './components/modal/Modal'
 
 /**
  * SECTIONS
@@ -28,6 +30,7 @@ const HomePage = () => {
   return (
     <>
       <ContactContextProvider>
+        <Modal />
         <HeroSection />
         <ServicesSection />
         <PricesSection />
@@ -35,6 +38,7 @@ const HomePage = () => {
         <ReviewSection />
         <Footer />
       </ContactContextProvider>
+
     </>
   )
 }

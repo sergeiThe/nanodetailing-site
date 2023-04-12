@@ -28,15 +28,26 @@ const PricesSection = () => {
     )
   })
   return (
-    <section className={`section ${styles.section}`}>
+    <section className={` ${styles.section}`}>
 
-      <div className='container'>
+      <Image
+        src={'/images/stripebg.jpg'}
+        fill
+        alt='bg'
+        className={styles.bg}
 
-        <h2 className='centered'>Faste priser</h2>
-        <p className='centered'>Vi har faste priser for enkelte bilmerker. Er ikke bilen din på lista, ta kontakt med oss</p>
-        <ul className={styles.list}>
-          {links}
-        </ul>
+      />
+      <div className={styles.container}>
+
+
+        <div className='container'>
+
+          <h2 className='centered'>Faste priser</h2>
+          <p className='centered'>Vi har faste priser for enkelte bilmerker. Er ikke bilen din på lista, ta kontakt med oss</p>
+          <ul className={styles.list}>
+            {links}
+          </ul>
+        </div>
       </div>
     </section>
   )

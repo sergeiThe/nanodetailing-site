@@ -1,9 +1,23 @@
 @import "../../../styles/mixins.scss";
+
+$red: rgb(164, 1, 1);
+
 .section {
-    border-top: 3px solid rgba(122, 122, 122, 0.075);
+    border-top: 2px solid $red;
+
+    position: relative;
+}
+.container {
+    position: relative;
+    background: rgba(255, 255, 255, 0.925);
     padding-top: 8rem;
     padding-bottom: 8rem;
-    background: white;
+
+    z-index: 10;
+
+    h2 {
+        color: black;
+    }
 }
 
 .list {
@@ -19,6 +33,6 @@
 }
 
 .bg {
-    z-index: -1;
-    color: #c20000;
+    // z-index: -10;
+    z-index: 5;
 }

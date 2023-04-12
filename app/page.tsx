@@ -5,6 +5,7 @@ import PricesSection from './components/prices/PricesSection'
 import CourseSection from './components/course/CourseSection'
 import ReviewSection from './components/reviews/ReviewSection'
 import Footer from './components/footer/Footer'
+import ContactContextProvider from './store/context'
 
 /**
  * SECTIONS
@@ -26,12 +27,14 @@ import Footer from './components/footer/Footer'
 const HomePage = () => {
   return (
     <>
-      <HeroSection />
-      <ServicesSection />
-      <PricesSection />
-      <CourseSection />
-      <ReviewSection />
-      <Footer />
+      <ContactContextProvider>
+        <HeroSection />
+        <ServicesSection />
+        <PricesSection />
+        <CourseSection />
+        <ReviewSection />
+        <Footer />
+      </ContactContextProvider>
     </>
   )
 }

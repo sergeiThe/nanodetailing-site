@@ -20,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={secular.className}>
+        <div id="modal"></div>
         <Header />
         <main>
           {children}

@@ -2,9 +2,22 @@
 import React from 'react'
 import styles from "./HeroSection.module.scss"
 import Image from 'next/image';
+import { ContactContext, useContactContext, ActionType } from '@/app/store/contact-context';
+import { ServiceActionType, useServiceContext } from '@/app/store/service-context';
 
 
 const HeroSection = () => {
+
+
+    const contactCtx = useContactContext()
+    const serviceCtx = useServiceContext()
+
+    const openContactModule = () => {
+        contactCtx.dispatch({ type: ActionType.OPEN })
+        // console.log("OPEN CONTACT MODULE")
+    }
+
+
     return (
         <section className={`section flex ${styles.section}`}>
             <video className={styles.bg} autoPlay playsInline loop muted preload='metadata'>
@@ -42,8 +55,8 @@ const HeroSection = () => {
                 <div className={styles.right}>
                     <div className={styles["hexagon-container"]}>
 
-                        <div className="hexagon-link">
-                            <a onClick={() => { console.log("Hexagon link clicked") }}>Kontakt</a>
+                        <div className="hexagon-link" onClick={openContactModule}>
+                            <a>Kontakt</a>
                         </div>
                         <div className="hexagon-link">
                             <a onClick={() => { console.log("Hexagon link clicked") }}>Tjenester</a>

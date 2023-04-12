@@ -18,8 +18,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="no">
       <body className={secular.className}>
+        <div id="backdrop"></div>
         <div id="modal"></div>
         <Header />
         <main>

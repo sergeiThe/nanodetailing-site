@@ -3,7 +3,7 @@ import { useContext, useReducer, Dispatch } from "react";
 import React from "react";
 
 
-enum ActionType {
+export enum ActionType {
     OPEN = 'open',
     CLOSE = 'close'
 }

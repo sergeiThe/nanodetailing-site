@@ -7,7 +7,8 @@ import CourseSection from './components/course/CourseSection'
 import ReviewSection from './components/reviews/ReviewSection'
 import Footer from './components/footer/Footer'
 import ContactContextProvider from './store/contact-context'
-import Modal from './components/modal/Modal'
+import Modal, { Backdrop } from './components/modal/Modal'
+import ServiceContextProvider from './store/service-context'
 
 /**
  * SECTIONS
@@ -30,13 +31,15 @@ const HomePage = () => {
   return (
     <>
       <ContactContextProvider>
-        <Modal />
-        <HeroSection />
-        <ServicesSection />
-        <PricesSection />
-        <CourseSection />
-        <ReviewSection />
-        <Footer />
+        <ServiceContextProvider>
+          <Modal />
+          <HeroSection />
+          <ServicesSection />
+          <PricesSection />
+          <CourseSection />
+          <ReviewSection />
+          <Footer />
+        </ServiceContextProvider>
       </ContactContextProvider>
 
     </>

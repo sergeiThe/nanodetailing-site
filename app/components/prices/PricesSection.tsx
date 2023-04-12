@@ -35,6 +35,7 @@ const PricesSection = () => {
         fill
         alt='bg'
         className={styles.bg}
+        style={{ objectFit: 'cover' }}
 
       />
       <div className={styles.container}>

@@ -4,9 +4,22 @@ import Particles from 'react-tsparticles'
 import { loadFull } from 'tsparticles'
 import styles from "./ServicesSection.module.scss"
 import type { Container, Engine } from "tsparticles-engine"
+import { ServiceActionType, useServiceContext } from '@/app/store/service-context'
 
+interface ServiceContent {
+    title: string;
+    text: string;
+}
 
 const ServicesSection = () => {
+
+    const serviceCtx = useServiceContext()
+
+    const openServiceModule = (payload: ServiceContent) => {
+        serviceCtx.dispatch({ type: ServiceActionType.OPEN, payload: payload })
+    }
+
+
 
     const particlesInit = useCallback(async (engine: Engine) => {
         console.log(engine);

@@ -1,0 +1,86 @@
+.modal {
+    position: fixed;
+
+    top: 0;
+    right: 0;
+
+    width: 60%;
+    height: 100vh;
+
+    background-color: white;
+
+    z-index: 1000;
+
+    // border-left: 1px solid black;
+    box-shadow: -2px 0px 5px white;
+
+    display: flex;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: rgb(132, 0, 0);
+    cursor: pointer;
+
+    transition: all 0.2s ease-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.left {
+    padding: 3rem;
+    flex-basis: 400px;
+    position: relative;
+}
+
+@mixin link {
+    a {
+        display: inline-block;
+        color: black;
+        text-decoration: none;
+        transition: all 0.2s ease-out;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.top-links {
+    @include link();
+}
+
+.form {
+    width: 300px;
+    box-sizing: border-box;
+    input,
+    textarea {
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 3px;
+        // margin: 1rem;
+        padding: 1rem;
+    }
+}
+
+.right {
+    height: 100%;
+    width: 100%;
+
+    flex-basis: 50%;
+}
+
+.bottom-links {
+    margin-top: 2rem;
+    display: inline-flex;
+    flex-direction: column;
+    li {
+        margin-top: 1rem;
+    }
+
+    @include link();
+}

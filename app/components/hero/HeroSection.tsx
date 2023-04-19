@@ -4,6 +4,7 @@ import styles from "./HeroSection.module.scss"
 import Image from 'next/image';
 import { ContactContext, useContactContext, ActionType } from '@/app/store/contact-context';
 import { ServiceActionType, useServiceContext } from '@/app/store/service-context';
+import HexLink from '../hexlink/HexLink';
 
 
 const HeroSection = () => {
@@ -55,18 +56,11 @@ const HeroSection = () => {
                 <div className={styles.right}>
                     <div className={styles["hexagon-container"]}>
 
-                        <div className="hexagon-link" onClick={openContactModule}>
-                            <a>Kontakt</a>
-                        </div>
-                        <div className="hexagon-link">
-                            <a onClick={() => { console.log("Hexagon link clicked") }}>Tjenester</a>
-                        </div>
-                        <div className="hexagon-link">
-                            <a onClick={() => { console.log("Hexagon link clicked") }}>Faste priser</a>
-                        </div>
-                        <div className="hexagon-link">
-                            <a onClick={() => { console.log("Hexagon link clicked") }}>Hendlex kurs</a>
-                        </div>
+                        <HexLink name='Kontakt' key={'kontakt'} image='/audi.png' event={openContactModule} />
+                        <HexLink name='Tjenester' key={'tjenester'} image='/tesla1.png' event={openContactModule} />
+                        <HexLink name='Faste priser' key={'kontakt'} image='/tesla2.png' event={openContactModule} />
+                        <HexLink name='Hendlex kurs' key={'kontakt'} image='/volk1.png' event={openContactModule} />
+
                     </div>
                 </div>
             </div>

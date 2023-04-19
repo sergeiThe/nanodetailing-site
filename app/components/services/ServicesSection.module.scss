@@ -55,10 +55,10 @@
 
     & > * {
         transition: all 0.3s;
-        &:hover {
-            transform: scale(1.2);
-            z-index: 5;
-        }
+        // &:hover {
+        //     transform: scale(1.2);
+        //     z-index: 5;
+        // }
 
         &:nth-child(1) {
             top: 180px;
@@ -92,9 +92,9 @@
         @include respond(tablet) {
             $x: 89px;
             $y: 78px;
-            &:hover {
-                transform: translateX(-27%) scale(1.1);
-            }
+            // &:hover {
+            //     transform: translateX(-27%) scale(1.1);
+            // }
 
             transform: translateX(-27%);
             &:nth-child(1) {

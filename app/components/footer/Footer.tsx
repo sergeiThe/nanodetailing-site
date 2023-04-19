@@ -7,6 +7,12 @@ const Footer = () => {
         <>
 
             <footer className={`footer ${styles.footer}`}>
+                <Image
+                    alt='footerbg'
+                    fill
+                    style={{ objectFit: "cover" }}
+                    src={"/images/bgfooter.jpg"}
+                />
                 <div className={`container ${styles.container}`}>
 
                     <div className={styles.left}>

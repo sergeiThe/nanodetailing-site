@@ -1,0 +1,116 @@
+@import "../../../styles/mixins.scss";
+.img {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(to bottom right, black, white);
+
+    &::after {
+        transition: all 0.6s;
+        content: " ";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+
+        clip-path: polygon(
+            50% 0%,
+            100% 25%,
+            100% 75%,
+            50% 100%,
+            0% 75%,
+            0% 25%
+        );
+
+        background-color: rgba(203, 3, 3, 0.724);
+        z-index: 2;
+    }
+
+    a {
+        margin: auto;
+        font-size: 2rem;
+        color: rgb(255, 255, 255);
+        z-index: 10;
+    }
+
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+    height: 120px * 1.8;
+    width: 100px * 1.8;
+
+    @include respond(tablet) {
+        height: 200px * 0.8;
+        width: 170px * 0.8;
+    }
+
+    @include respond(mobile) {
+        height: 150px * 0.8;
+        width: 120px * 0.8;
+    }
+
+    transition: all 0.5s;
+}
+.link {
+    &:hover .img::after {
+        width: 50%;
+        height: 50%;
+    }
+
+    &:hover .img {
+        height: 120px * 1.95;
+        width: 100px * 1.95;
+
+        $hover-multiplier: 1.1;
+
+        @include respond(tablet) {
+            height: 200px * $hover-multiplier;
+            width: 170px * $hover-multiplier;
+        }
+
+        @include respond(mobile) {
+            height: 150px * $hover-multiplier;
+            width: 120px * $hover-multiplier;
+        }
+    }
+
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: #ffffff;
+
+    height: 120px * 2;
+    width: 100px * 2;
+
+    @include respond(tablet) {
+        height: 200px;
+        width: 170px;
+    }
+
+    @include respond(mobile) {
+        height: 150px;
+        width: 120px;
+    }
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    position: absolute;
+    z-index: 2;
+
+    // &:hover {
+    //     scale: 1.05;
+    // }
+}

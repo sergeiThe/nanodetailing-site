@@ -5,6 +5,7 @@ import { loadFull } from 'tsparticles'
 import styles from "./ServicesSection.module.scss"
 import type { Container, Engine } from "tsparticles-engine"
 import { ServiceActionType, useServiceContext } from '@/app/store/service-context'
+import HexLink from '../hexlink/HexLink'
 
 interface ServiceContent {
     title: string;
@@ -129,30 +130,16 @@ const ServicesSection = () => {
             <div className={`container ${styles.container}`}>
 
                 <h2 className="centered">Services</h2>
-                <p className="centered">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit corporis eum odit provident esse alias nobis mollitia officiis debitis. Porro mollitia molestiae esse cupiditate nisi perferendis minus nam libero sed.</p>
+                <p className="centered">Nanodetailing tilbyr førsteklasses kundeservice og en rekke bilpleiealternativer å velge mellom. I tilfelle du har spørsmål, kan du ta kontakt med oss.</p>
 
                 <div className={styles['link-container']}>
-                    <div className="hexagon-link">
-                        <a onClick={() => { console.log("Hexagon link clicked") }}>Kontakt</a>
-                    </div>
-                    <div className="hexagon-link">
-                        <a onClick={() => { console.log("Hexagon link clicked") }}>Kontakt</a>
-                    </div>
-                    <div className="hexagon-link">
-                        <a onClick={() => { console.log("Hexagon link clicked") }}>Kontakt</a>
-                    </div>
-                    <div className="hexagon-link">
-                        <a onClick={() => { console.log("Hexagon link clicked") }}>Kontakt</a>
-                    </div>
-                    <div className="hexagon-link">
-                        <a onClick={() => { console.log("Hexagon link clicked") }}>Kontakt</a>
-                    </div>
-                    <div className="hexagon-link">
-                        <a onClick={() => { console.log("Hexagon link clicked") }}>Kontakt</a>
-                    </div>
-                    <div className="hexagon-link">
-                        <a onClick={() => { console.log("Hexagon link clicked") }}>Kontakt</a>
-                    </div>
+                    <HexLink name='Kontakt' key={'kontakt'} image='/audi.png' />
+                    <HexLink name='Kontakt' key={'kontakt'} image='/audi.png' />
+                    <HexLink name='Kontakt' key={'kontakt'} image='/audi.png' />
+                    <HexLink name='Kontakt' key={'kontakt'} image='/audi.png' />
+                    <HexLink name='Kontakt' key={'kontakt'} image='/audi.png' />
+                    <HexLink name='Kontakt' key={'kontakt'} image='/audi.png' />
+                    <HexLink name='Kontakt' key={'kontakt'} image='/audi.png' />
                 </div>
             </div>
         </section>

@@ -22,6 +22,7 @@ const PricesModal = ({ image }: PricesModalProps) => {
                     fill
                     src={image}
                     style={{ objectFit: "contain" }}
+                    priority
                 />
             </div>
         </div>

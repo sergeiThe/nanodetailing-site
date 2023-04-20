@@ -84,7 +84,7 @@ const ServicesSection = () => {
                     interactivity: {
                         events: {
                             onClick: {
-                                enable: true,
+                                enable: false,
                                 mode: "push",
                             },
                             onHover: {
@@ -94,9 +94,6 @@ const ServicesSection = () => {
                             resize: true,
                         },
                         modes: {
-                            push: {
-                                quantity: 4,
-                            },
                             repulse: {
                                 distance: 100,
                                 duration: 5,

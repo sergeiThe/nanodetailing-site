@@ -2,6 +2,7 @@
 import React from "react";
 import styles from "./ContactModal.module.scss";
 import { ActionType, useContactContext } from "@/app/store/contact-context";
+import emailjs from "@emailjs/browser";
 
 // Data
 const title = "Kontaktskjema";
@@ -14,6 +15,16 @@ const ContactModal = () => {
 
     const close = () => {
         contactContext.dispatch({ type: ActionType.CLOSE });
+    };
+
+    const sendMail = (e: React.FormEvent) => {
+        e.preventDefault();
+        emailjs.sendForm(
+            "service_te8odrw",
+            "template_mapsgnw",
+            e.target as HTMLFormElement,
+            "xhZxJ0D-bhia6zE1u"
+        );
     };
 
     return (
@@ -37,7 +48,7 @@ const ContactModal = () => {
 
                 <h2>{title}</h2>
 
-                <form className={styles.form}>
+                <form className={styles.form} onSubmit={sendMail}>
                     <label htmlFor="navn">Navn</label>
                     <input id="navn" name="navn" type="text" required />
 

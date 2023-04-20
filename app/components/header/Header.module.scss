@@ -50,6 +50,10 @@
     // right: 0rem;
     top: 40%;
 
+    @include respond(mobile) {
+        top: 400px;
+    }
+
     display: flex;
     flex-direction: column;
     gap: 1rem;

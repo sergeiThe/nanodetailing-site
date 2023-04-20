@@ -38,7 +38,6 @@ const Header = () => {
         <>
             <header
                 className={`header ${styles.header} ${show && "show-navbar"}`}
-                onClick={openContactModal}
             >
                 <div className={`container ${styles.container}`}>
                     <div className={styles["img-container"]}>

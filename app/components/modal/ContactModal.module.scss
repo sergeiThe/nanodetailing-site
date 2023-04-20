@@ -1,3 +1,4 @@
+@import "../../../styles/mixins.scss";
 .modal {
     position: fixed;
 
@@ -9,12 +10,20 @@
 
     background-color: white;
 
-    z-index: 1000;
+    z-index: 2000;
 
     // border-left: 1px solid black;
     box-shadow: -2px 0px 5px white;
 
     display: flex;
+    flex-direction: row;
+
+    @include respond(tablet) {
+        width: 80%;
+    }
+    @include respond(mobile) {
+        width: 90%;
+    }
 }
 
 .close {
@@ -35,6 +44,10 @@
     padding: 3rem;
     flex-basis: 400px;
     position: relative;
+
+    @include respond(tablet) {
+        flex-basis: 50%;
+    }
 }
 
 @mixin link {
@@ -66,13 +79,24 @@
         // margin: 1rem;
         padding: 1rem;
     }
+
+    @include respond(mobile) {
+        width: 100%;
+    }
 }
 
 .right {
     height: 100%;
     width: 100%;
 
+    @include respond(tablet) {
+        flex-basis: 50%;
+    }
     // flex-basis: 50%;
+
+    @include respond(mobile) {
+        display: none;
+    }
 }
 
 .bottom-links {

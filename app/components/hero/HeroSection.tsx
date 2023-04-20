@@ -72,19 +72,19 @@ const HeroSection = () => {
                             name="Tjenester"
                             key={"tjenester"}
                             image="tesla1.png"
-                            event={openContactModule}
+                            anchor="services"
                         />
                         <HexLink
                             name="Faste priser"
                             key={"kontakt"}
                             image="tesla2.png"
-                            event={openContactModule}
+                            anchor="prices"
                         />
                         <HexLink
                             name="Hendlex kurs"
                             key={"kontakt"}
                             image="volk1.png"
-                            event={openContactModule}
+                            anchor="course"
                         />
                     </div>
                 </div>

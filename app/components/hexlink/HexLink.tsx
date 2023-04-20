@@ -1,11 +1,13 @@
 import React from "react";
 import styles from "./HexLink.module.scss";
 import Image from "next/image";
+import { Link } from "react-scroll";
 
 interface LinkProps {
     image: string;
     name: string;
     event?: () => void;
+    anchor?: string;
 }
 
 const HexLink = (props: LinkProps) => {
@@ -18,7 +20,19 @@ const HexLink = (props: LinkProps) => {
                     style={{ objectFit: "contain" }}
                     src={"/images/" + props.image}
                 />
-                <a>{props.name}</a>
+                {props.anchor && (
+                    <Link
+                        to={props.anchor}
+                        spy={true}
+                        smooth={true}
+                        offset={50}
+                        duration={500}
+                        className={styles["scroll-link"]}
+                    >
+                        {props.name}
+                    </Link>
+                )}
+                {!props.anchor && <a>{props.name}</a>}
             </div>
         </div>
     );

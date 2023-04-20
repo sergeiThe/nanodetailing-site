@@ -10,6 +10,7 @@ import ContactContextProvider from "./store/contact-context";
 import Modal, { Backdrop } from "./components/modal/Modal";
 import ServiceContextProvider from "./store/service-context";
 import PricesContextProvider from "./store/prices-context";
+import Header from "./components/header/Header";
 
 /**
  * SECTIONS
@@ -34,6 +35,7 @@ const HomePage = () => {
             <ContactContextProvider>
                 <ServiceContextProvider>
                     <PricesContextProvider>
+                        <Header />
                         <Modal />
                         <HeroSection />
                         <ServicesSection />

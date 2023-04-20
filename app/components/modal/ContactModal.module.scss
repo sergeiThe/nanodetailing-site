@@ -22,8 +22,7 @@
         width: 80%;
     }
     @include respond(mobile) {
-        width: 270px;
-        flex-direction: column;
+        width: 300px;
     }
 }
 
@@ -96,9 +95,7 @@
     // flex-basis: 50%;
 
     @include respond(mobile) {
-        flex-basis: 20px;
-        height: 60%;
-        width: 100%;
+        display: none;
     }
 }
 

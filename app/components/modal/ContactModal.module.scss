@@ -57,6 +57,7 @@
 .form {
     width: 300px;
     box-sizing: border-box;
+    padding-right: 30px;
     input,
     textarea {
         width: 100%;
@@ -71,7 +72,7 @@
     height: 100%;
     width: 100%;
 
-    flex-basis: 50%;
+    // flex-basis: 50%;
 }
 
 .bottom-links {

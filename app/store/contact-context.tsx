@@ -1,63 +1,63 @@
-'use client';
+"use client";
 import { useContext, useReducer, Dispatch } from "react";
 import React from "react";
 
-
 export enum ActionType {
-    OPEN = 'open',
-    CLOSE = 'close'
+    OPEN = "open",
+    CLOSE = "close",
 }
 
 type Action = {
     type: ActionType;
-}
+};
 
 interface IState {
-    isOpen: boolean
+    isOpen: boolean;
 }
 
 const initState = {
-    isOpen: false
-}
+    isOpen: false,
+};
 
 const reducer = (state: IState, action: Action) => {
     switch (action.type) {
         case ActionType.OPEN:
-            return { isOpen: true }
+            return { ...state, isOpen: true };
 
         case ActionType.CLOSE:
-            return { isOpen: false }
+            return { ...state, isOpen: false };
 
         default:
-            return state
+            return state;
     }
-}
+};
 
 interface IContext {
     state: IState;
-    dispatch: Dispatch<Action>
+    dispatch: Dispatch<Action>;
 }
-
-
 
 export const ContactContext = React.createContext<IContext>({
     state: initState,
-    dispatch: () => { }
-})
+    dispatch: () => {},
+});
 
 export const useContactContext = () => {
-    return useContext(ContactContext)
-}
+    return useContext(ContactContext);
+};
 
-
-const ContactContextProvider = ({ children }: { children: React.ReactNode }) => {
-    const [state, dispatch] = useReducer(reducer, initState)
+const ContactContextProvider = ({
+    children,
+}: {
+    children: React.ReactNode;
+}) => {
+    const [state, dispatch] = useReducer(reducer, initState);
 
     return (
         <ContactContext.Provider value={{ state, dispatch }}>
             {children}
         </ContactContext.Provider>
-    )
-}
+    );
+};
 
-export default ContactContextProvider
+export default ContactContextProvider;

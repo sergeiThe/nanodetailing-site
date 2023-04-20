@@ -36,9 +36,17 @@
 
     a {
         margin: auto;
-        font-size: 2rem;
+        font-size: 2.1rem;
         color: rgb(255, 255, 255);
         z-index: 10;
+
+        @include respond(tablet) {
+            font-size: 1.6rem;
+        }
+
+        @include respond(mobile) {
+            font-size: 1.4rem;
+        }
     }
 
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
@@ -68,7 +76,7 @@
         height: 120px * 1.95;
         width: 100px * 1.95;
 
-        $hover-multiplier: 1.1;
+        $hover-multiplier: 0.7;
 
         @include respond(tablet) {
             height: 200px * $hover-multiplier;

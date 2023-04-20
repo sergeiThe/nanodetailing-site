@@ -32,6 +32,16 @@ body {
     transition: all 0.3s;
 }
 
+.social {
+    right: -3rem;
+    transition: all 0.3s;
+}
+
+.show-social {
+    transition: all 0.3s;
+    right: 1rem;
+}
+
 .container {
     margin: 0 auto;
     max-width: 130rem;

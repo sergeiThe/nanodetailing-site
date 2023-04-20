@@ -1,26 +1,54 @@
-'use client'
-import React, { useCallback } from 'react'
-import Particles from 'react-tsparticles'
-import { loadFull } from 'tsparticles'
-import styles from "./ServicesSection.module.scss"
-import type { Container, Engine } from "tsparticles-engine"
-import { ServiceActionType, useServiceContext } from '@/app/store/service-context'
-import HexLink from '../hexlink/HexLink'
+"use client";
+import React, { useCallback } from "react";
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+import styles from "./ServicesSection.module.scss";
+import type { Container, Engine } from "tsparticles-engine";
+import {
+    ServiceActionType,
+    useServiceContext,
+} from "@/app/store/service-context";
+import HexLink from "../hexlink/HexLink";
+import { services, servicesMap } from "@/app/data/services";
+
+interface Content {
+    p1: string;
+    p2: string;
+    p3: string;
+    p4?: string;
+    p5?: string;
+    p6?: string;
+}
 
 interface ServiceContent {
-    title: string;
-    text: string;
+    name: string;
+    content: Content;
+    image: string;
 }
 
 const ServicesSection = () => {
+    const serviceCtx = useServiceContext();
 
-    const serviceCtx = useServiceContext()
+    const hexLinks = services.map((s) => {
+        return (
+            <HexLink
+                key={s.name}
+                name={s.name}
+                event={() =>
+                    openServiceModule({
+                        name: s.name,
+                        content: s.content,
+                        image: s.image,
+                    })
+                }
+                image={s.image}
+            />
+        );
+    });
 
     const openServiceModule = (payload: ServiceContent) => {
-        serviceCtx.dispatch({ type: ServiceActionType.OPEN, payload: payload })
-    }
-
-
+        serviceCtx.dispatch({ type: ServiceActionType.OPEN, payload: payload });
+    };
 
     const particlesInit = useCallback(async (engine: Engine) => {
         console.log(engine);
@@ -31,18 +59,20 @@ const ServicesSection = () => {
         await loadFull(engine);
     }, []);
 
-    const particlesLoaded = useCallback(async (container: Container | undefined) => {
-        await console.log(container);
-    }, []);
+    const particlesLoaded = useCallback(
+        async (container: Container | undefined) => {
+            await console.log(container);
+        },
+        []
+    );
     return (
-        <section className={`section ${styles.section}`}>
+        <section className={`section ${styles.section}`} id="services">
             <Particles
                 id="tsparticles"
                 init={particlesInit}
                 loaded={particlesLoaded}
                 className={styles.particles}
                 options={{
-
                     style: { zIndex: "-1" },
 
                     background: {
@@ -111,13 +141,12 @@ const ServicesSection = () => {
                             type: "polygon",
                             polygon: {
                                 sides: 6,
-
                             },
                             stroke: {
                                 width: 2,
                                 color: "#c20000",
-                                opacity: 0.06
-                            }
+                                opacity: 0.06,
+                            },
                         },
                         size: {
                             value: { min: 30, max: 50 },
@@ -128,22 +157,17 @@ const ServicesSection = () => {
             />
 
             <div className={`container ${styles.container}`}>
-
                 <h2 className="centered">Services</h2>
-                <p className="centered">Nanodetailing tilbyr førsteklasses kundeservice og en rekke bilpleiealternativer å velge mellom. I tilfelle du har spørsmål, kan du ta kontakt med oss.</p>
+                <p className="centered">
+                    Nanodetailing tilbyr førsteklasses kundeservice og en rekke
+                    bilpleiealternativer å velge mellom. I tilfelle du har
+                    spørsmål, kan du ta kontakt med oss.
+                </p>
 
-                <div className={styles['link-container']}>
-                    <HexLink name='Kontakt' key={'kontakt'} image='/audi.png' />
-                    <HexLink name='Kontakt' key={'kontakt'} image='/audi.png' />
-                    <HexLink name='Kontakt' key={'kontakt'} image='/audi.png' />
-                    <HexLink name='Kontakt' key={'kontakt'} image='/audi.png' />
-                    <HexLink name='Kontakt' key={'kontakt'} image='/audi.png' />
-                    <HexLink name='Kontakt' key={'kontakt'} image='/audi.png' />
-                    <HexLink name='Kontakt' key={'kontakt'} image='/audi.png' />
-                </div>
+                <div className={styles["link-container"]}>{hexLinks}</div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default ServicesSection
+export default ServicesSection;

@@ -1,11 +1,11 @@
-import React from 'react'
-import styles from './HexLink.module.scss'
-import Image from 'next/image';
+import React from "react";
+import styles from "./HexLink.module.scss";
+import Image from "next/image";
 
 interface LinkProps {
     image: string;
     name: string;
-    event?: () => void
+    event?: () => void;
 }
 
 const HexLink = (props: LinkProps) => {
@@ -16,12 +16,12 @@ const HexLink = (props: LinkProps) => {
                     alt={props.name}
                     fill
                     style={{ objectFit: "contain" }}
-                    src={'/images' + props.image}
+                    src={"/images/" + props.image}
                 />
                 <a>{props.name}</a>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default HexLink
+export default HexLink;

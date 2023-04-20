@@ -22,11 +22,11 @@
     background: black;
 
     @include respond(mobile) {
-        height: 100vh;
+        height: 100%;
         width: auto;
 
-        transform: translateY(0);
-        top: 0;
+        transform: translateY(-50%);
+        top: 50%;
         left: 0;
     }
 }

@@ -19,7 +19,7 @@ const PricesModal = ({ image }: PricesModalProps) => {
         <div className={styles.modal} onClick={close}>
             <div className={styles["img-container"]}>
                 <Image
-                    alt="prices"
+                    alt={image}
                     fill
                     src={image}
                     style={{ objectFit: "contain" }}

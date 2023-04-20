@@ -76,13 +76,13 @@ const HeroSection = () => {
                         />
                         <HexLink
                             name="Faste priser"
-                            key={"kontakt"}
+                            key={"prices"}
                             image="tesla2.png"
                             anchor="prices"
                         />
                         <HexLink
                             name="Hendlex kurs"
-                            key={"kontakt"}
+                            key={"course"}
                             image="volk1.png"
                             anchor="course"
                         />

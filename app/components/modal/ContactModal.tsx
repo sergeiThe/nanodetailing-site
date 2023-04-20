@@ -25,6 +25,10 @@ const ContactModal = () => {
             e.target as HTMLFormElement,
             "xhZxJ0D-bhia6zE1u"
         );
+
+        setTimeout(() => {
+            close();
+        }, 1000);
     };
 
     return (

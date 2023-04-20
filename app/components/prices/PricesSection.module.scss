@@ -34,6 +34,7 @@ $text: white;
     @include respond(mobile) {
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
     }
 }
 

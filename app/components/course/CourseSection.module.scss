@@ -13,9 +13,8 @@
 
     text-align: center;
 
-    @include respond(tablet) {
-        flex-direction: column;
-        gap: 0;
+    @include respond(mobile) {
+        padding: 0rem;
     }
 }
 
@@ -90,4 +89,8 @@
     position: relative;
     width: 80%;
     margin: 5rem auto;
+
+    @include respond(mobile) {
+        width: 100%;
+    }
 }

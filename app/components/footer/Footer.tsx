@@ -16,7 +16,7 @@ const Footer = () => {
                 <Image
                     alt="footerbg"
                     fill
-                    style={{ objectFit: "cover" }}
+                    style={{ objectFit: "contain" }}
                     src={"/images/bgfooter.jpg"}
                 />
                 <div className={styles.bg}></div>
@@ -44,7 +44,6 @@ const Footer = () => {
                                 style={{ objectFit: "contain" }}
                                 src={"/images/logo.png"}
                                 quality={75}
-                                priority
                                 className={styles.logo}
                             />
                         </div>

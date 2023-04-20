@@ -12,6 +12,10 @@ $rights: rgba(176, 176, 176, 0.79);
     position: relative;
     padding-left: 5rem;
     padding-right: 5rem;
+    @include respond(mobile) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
 
 .bg {
@@ -35,19 +39,10 @@ $rights: rgba(176, 176, 176, 0.79);
 
     border-bottom: 1px solid $rights;
 
-    @include respond(mobile) {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
     // height: 100%;
     width: 100%;
 
     // background: linear-gradient(to right, #000000, #000000d7);
-
-    @include respond(mobile) {
-        flex-direction: column-reverse;
-    }
 
     z-index: 100;
 }
@@ -62,12 +57,16 @@ $rights: rgba(176, 176, 176, 0.79);
 .left {
     flex-basis: 50%;
     color: $text;
+
+    @include respond(mobile) {
+        flex-basis: 100%;
+    }
 }
 
 .right {
     flex-basis: 50%;
     @include respond(mobile) {
-        flex-basis: 200px;
+        display: none;
     }
 }
 

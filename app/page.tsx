@@ -11,7 +11,7 @@ import Modal, { Backdrop } from "./components/modal/Modal";
 import ServiceContextProvider from "./store/service-context";
 import PricesContextProvider from "./store/prices-context";
 import Header from "./components/header/Header";
-
+import { AnimatePresence } from "framer-motion";
 /**
  * SECTIONS
  * 1. Header: logo, nav, hamburger, menu modal
@@ -36,7 +36,9 @@ const HomePage = () => {
                 <ServiceContextProvider>
                     <PricesContextProvider>
                         <Header />
+
                         <Modal />
+
                         <HeroSection />
                         <ServicesSection />
                         <PricesSection />

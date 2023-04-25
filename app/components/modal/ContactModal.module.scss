@@ -44,6 +44,8 @@
     padding: 3rem;
     flex-basis: 400px;
     position: relative;
+    z-index: 1000;
+    background-color: white;
 
     @include respond(tablet) {
         flex-basis: 50%;
@@ -88,6 +90,7 @@
 .right {
     height: 100%;
     width: 100%;
+    z-index: 1000;
 
     @include respond(tablet) {
         flex-basis: 50%;

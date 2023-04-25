@@ -3,12 +3,29 @@ import React from "react";
 import styles from "./ContactModal.module.scss";
 import { ActionType, useContactContext } from "@/app/store/contact-context";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
+import { Backdrop } from "./Modal";
 
 // Data
 const title = "Kontaktskjema";
 const telephone = "+47 405 90 005";
 const email = "post@nanodetailing.no";
 const address = "Vestre Rosten 102, 7025 Tiller";
+
+// Animation variants
+const variants = {
+    hidden: { x: 1000 },
+    show: {
+        x: 0,
+        transition: {
+            when: "beforeChildren",
+            staggerChildren: 0.3,
+            ease: "easeOut",
+            bounce: "none",
+            duration: 0.3,
+        },
+    },
+};
 
 const ContactModal = () => {
     const contactContext = useContactContext();
@@ -32,7 +49,15 @@ const ContactModal = () => {
     };
 
     return (
-        <div className={styles.modal}>
+        <motion.div
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            key={"contact-modal"}
+            variants={variants}
+            className={styles.modal}
+        >
+            <Backdrop />
             <div className={styles.left}>
                 <div className={styles.close} onClick={close}>
                     Lukk X
@@ -101,7 +126,7 @@ const ContactModal = () => {
                     referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

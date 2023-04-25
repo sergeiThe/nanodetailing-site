@@ -1,7 +1,11 @@
-import React from 'react'
-import styles from "./ServiceModal.module.scss"
-import Image from 'next/image';
-import { ServiceActionType, useServiceContext } from '@/app/store/service-context';
+import React from "react";
+import styles from "./ServiceModal.module.scss";
+import Image from "next/image";
+import {
+    ServiceActionType,
+    useServiceContext,
+} from "@/app/store/service-context";
+import { motion as m } from "framer-motion";
 
 interface Content {
     p1: string;
@@ -10,7 +14,6 @@ interface Content {
     p4?: string;
     p5?: string;
     p6?: string;
-
 }
 
 interface ServiceContent {
@@ -20,23 +23,30 @@ interface ServiceContent {
 }
 
 const ServiceModal = (props: ServiceContent) => {
-
-
-    const serviceCtx = useServiceContext()
+    const serviceCtx = useServiceContext();
 
     const close = (e: React.MouseEvent<HTMLButtonElement | HTMLDivElement>) => {
-        serviceCtx.dispatch({ type: ServiceActionType.CLOSE })
-        e.stopPropagation()
-    }
+        serviceCtx.dispatch({ type: ServiceActionType.CLOSE });
+        e.stopPropagation();
+    };
 
     return (
-        <div className={styles.modal} onClick={close}>
-            <div className={styles.container} onClick={(e) => {
-                e.stopPropagation()
-            }}>
-
+        <m.div
+            className={styles.modal}
+            onClick={close}
+            initial={{ x: 2000 }}
+            exit={{ x: 2000 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.3 }}
+            key={styles.modal}
+        >
+            <div
+                className={styles.container}
+                onClick={(e) => {
+                    e.stopPropagation();
+                }}
+            >
                 <div className={styles.left}>
-
                     <h2>{props.name}</h2>
                     <p>{props.content.p1}</p>
                     <p>{props.content.p2}</p>
@@ -47,7 +57,7 @@ const ServiceModal = (props: ServiceContent) => {
                 </div>
                 <div className={styles.right}>
                     <Image
-                        alt='car'
+                        alt="car"
                         fill
                         src={`/images/${props.image}`}
                         style={{ objectFit: "contain" }}
@@ -57,8 +67,8 @@ const ServiceModal = (props: ServiceContent) => {
             <div className={styles.close} onClick={close}>
                 Lukk X
             </div>
-        </div>
-    )
-}
+        </m.div>
+    );
+};
 
-export default ServiceModal
+export default ServiceModal;

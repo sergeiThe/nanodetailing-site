@@ -8,6 +8,12 @@ import { useServiceContext } from "@/app/store/service-context";
 import ServiceModal from "./ServiceModal";
 import { usePricesContext } from "@/app/store/prices-context";
 import PricesModal from "./PricesModal";
+import { motion as m, AnimatePresence } from "framer-motion";
+
+const variants = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 },
+};
 
 export const Backdrop = () => {
     const contactCtx = useContactContext();
@@ -16,7 +22,9 @@ export const Backdrop = () => {
         contactCtx.dispatch({ type: ActionType.CLOSE });
     };
 
-    return <div className="backdrop" onClick={close}></div>;
+    return (
+        <m.div variants={variants} className="backdrop" onClick={close}></m.div>
+    );
 };
 
 const Modal = () => {
@@ -26,24 +34,30 @@ const Modal = () => {
 
     return (
         <>
-            {contactCtx.state.isOpen &&
+            {/* {contactCtx.state.isOpen &&
                 ReactDOM.createPortal(
-                    <ContactModal />,
+                    <AnimatePresence>
+                        <ContactModal />
+                    </AnimatePresence>,
                     document.querySelector("#modal") as HTMLElement
                 )}
             {contactCtx.state.isOpen &&
                 ReactDOM.createPortal(
-                    <Backdrop />,
+                    <AnimatePresence>
+                        <Backdrop />
+                    </AnimatePresence>,
                     document.querySelector("#backdrop") as HTMLElement
                 )}
 
             {serviceCtx.state.name &&
                 ReactDOM.createPortal(
-                    <ServiceModal
-                        name={serviceCtx.state.name}
-                        content={serviceCtx.state.content!}
-                        image={serviceCtx.state.image!}
-                    />,
+                    <AnimatePresence>
+                        <ServiceModal
+                            name={serviceCtx.state.name}
+                            content={serviceCtx.state.content!}
+                            image={serviceCtx.state.image!}
+                        />
+                    </AnimatePresence>,
                     document.querySelector("#modal") as HTMLElement
                 )}
 
@@ -53,7 +67,24 @@ const Modal = () => {
                         image={`/images/prices/${pricesCtx.state.typeModal}`}
                     />,
                     document.querySelector("#modal") as HTMLElement
+                )} */}
+            <AnimatePresence mode="wait">
+                {contactCtx.state.isOpen && <ContactModal />}
+
+                {serviceCtx.state.name && (
+                    <ServiceModal
+                        name={serviceCtx.state.name}
+                        content={serviceCtx.state.content!}
+                        image={serviceCtx.state.image!}
+                    />
                 )}
+
+                {pricesCtx.state.typeModal && (
+                    <PricesModal
+                        image={`/images/prices/${pricesCtx.state.typeModal}`}
+                    />
+                )}
+            </AnimatePresence>
         </>
     );
 };

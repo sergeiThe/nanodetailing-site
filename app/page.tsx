@@ -36,14 +36,12 @@ const HomePage = () => {
                 <ServiceContextProvider>
                     <PricesContextProvider>
                         <Header />
-
                         <Modal />
-
                         <HeroSection />
                         <ServicesSection />
                         <PricesSection />
                         <CourseSection />
-                        <ReviewSection />
+                        {/* <ReviewSection /> */}
                         <Footer />
                     </PricesContextProvider>
                 </ServiceContextProvider>

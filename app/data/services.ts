@@ -14,7 +14,7 @@ export const services = [
         image: "tesla1.png",
     },
     {
-        name: "PPF Lakkbeskyttelse",
+        name: "PPF",
         content: {
             p1: "PPF (Paint Protection Film) eller lakkbeskyttelsesfilm er en gjennomsiktig film med selv-helbredende egenskaper som legges på bilen som et nesten usynlig skjold for å beskytte den mot steinsprut, riper og små bulker. Dessuten, er insekter, harpiks og kalk ikke farlige lenger på grunn av filmens sterke hydrofobiske effekt.",
             p2: "Har du en leasingbil, er denne servicen et nødvendig tiltak mot store regninger på lakkskader. Hvis du eier bilen selv og er interessert i å bevare bilen i en lang periode, er PPF et fantastisk valg.",

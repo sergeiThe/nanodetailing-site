@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import styles from "./ContactModal.module.scss";
 import { ActionType, useContactContext } from "@/app/store/contact-context";
 import emailjs from "@emailjs/browser";
@@ -14,7 +14,7 @@ const address = "Vestre Rosten 102, 7025 Tiller";
 
 // Animation variants
 const variants = {
-    hidden: { x: 1000 },
+    hidden: { x: 3000 },
     show: {
         x: 0,
         transition: {
@@ -28,6 +28,8 @@ const variants = {
 };
 
 const ContactModal = () => {
+    const [formSent, setFormSent] = useState<boolean>(false);
+
     const contactContext = useContactContext();
 
     const close = () => {
@@ -36,16 +38,18 @@ const ContactModal = () => {
 
     const sendMail = (e: React.FormEvent) => {
         e.preventDefault();
-        emailjs.sendForm(
-            "service_te8odrw",
-            "template_mapsgnw",
-            e.target as HTMLFormElement,
-            "xhZxJ0D-bhia6zE1u"
-        );
-
-        setTimeout(() => {
-            close();
-        }, 1000);
+        emailjs
+            .sendForm(
+                "service_te8odrw",
+                "template_mapsgnw",
+                e.target as HTMLFormElement,
+                "xhZxJ0D-bhia6zE1u"
+            )
+            .then((res) => {
+                setTimeout(() => {
+                    contactContext.dispatch({ type: ActionType.CLOSE });
+                }, 1000);
+            });
     };
 
     return (
@@ -77,25 +81,28 @@ const ContactModal = () => {
 
                 <h2>{title}</h2>
 
-                <form className={styles.form} onSubmit={sendMail}>
-                    <label htmlFor="navn">Navn</label>
-                    <input id="navn" name="navn" type="text" required />
+                {!formSent && (
+                    <form className={styles.form} onSubmit={sendMail}>
+                        <label htmlFor="navn">Navn</label>
+                        <input id="navn" name="navn" type="text" required />
 
-                    <label htmlFor="epost">E-post</label>
-                    <input id="epost" name="epost" type="email" required />
+                        <label htmlFor="epost">E-post</label>
+                        <input id="epost" name="epost" type="email" required />
 
-                    <label htmlFor="telefon">Telefon</label>
-                    <input id="telefon" name="telefon" type="text" />
+                        <label htmlFor="telefon">Telefon</label>
+                        <input id="telefon" name="telefon" type="text" />
 
-                    <label htmlFor="beskjed">Beskjed</label>
-                    <textarea id="beskjed" name="beskjed"></textarea>
+                        <label htmlFor="beskjed">Beskjed</label>
+                        <textarea id="beskjed" name="beskjed"></textarea>
 
-                    <button type="submit" className="btn">
-                        Send
-                    </button>
-                </form>
+                        <button type="submit" className="btn">
+                            Send
+                        </button>
+                    </form>
+                )}
+                {formSent && <div className={styles.thanks}>Takk!</div>}
 
-                <ul className={styles["bottom-links"]}>
+                {/* <ul className={styles["bottom-links"]}>
                     <li>
                         <a
                             onClick={() => {
@@ -114,7 +121,7 @@ const ContactModal = () => {
                             Cookies
                         </a>
                     </li>
-                </ul>
+                </ul> */}
             </div>
 
             <div className={styles.right}>

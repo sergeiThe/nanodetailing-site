@@ -3,6 +3,7 @@ import Script from "next/script";
 
 function Analytics() {
     const GTM_ID = "GTM-K259QK2";
+    const GA_ID = "G-DS70E9TPF6";
     return (
         <>
             <noscript>
@@ -26,6 +27,20 @@ function Analytics() {
   `,
                 }}
             />
+
+            <Script
+                async
+                src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+            ></Script>
+            <Script id="google-analytics" strategy="afterInteractive">
+                {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', '${GA_ID}');
+`}
+            </Script>
         </>
     );
 }

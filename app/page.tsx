@@ -12,6 +12,8 @@ import ServiceContextProvider from "./store/service-context";
 import PricesContextProvider from "./store/prices-context";
 import Header from "./components/header/Header";
 import { AnimatePresence } from "framer-motion";
+import Head from "next/head";
+import Script from "next/script";
 /**
  * SECTIONS
  * 1. Header: logo, nav, hamburger, menu modal
@@ -32,6 +34,24 @@ import { AnimatePresence } from "framer-motion";
 const HomePage = () => {
     return (
         <>
+            <Head>
+                <link rel="icon" type="image/ico" href="/favicon.ico" />
+            </Head>
+
+            <Script
+                strategy="afterInteractive"
+                src="https://www.googletagmanager.com/gtag/js?id=G-TKN1VDPJBY"
+            ></Script>
+
+            <Script id="google-analytics" strategy="afterInteractive">
+                {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-TKN1VDPJBY');
+      `}
+            </Script>
             <ContactContextProvider>
                 <ServiceContextProvider>
                     <PricesContextProvider>

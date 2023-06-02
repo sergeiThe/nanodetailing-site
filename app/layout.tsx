@@ -1,6 +1,8 @@
+import { Suspense } from "react";
 import "../styles/index.scss";
 import Header from "./components/header/Header";
 import { Secular_One, Roboto, Poppins } from "next/font/google";
+import Analytics from "./components/analytics/Analytics";
 
 export const metadata = {
     title: "Nanodetailing | Trondheim",
@@ -35,6 +37,9 @@ export default function RootLayout({
     return (
         <html lang="no">
             <body className={font.className}>
+                <Suspense>
+                    <Analytics />
+                </Suspense>
                 <div id="backdrop"></div>
                 <div id="modal"></div>
 

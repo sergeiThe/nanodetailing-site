@@ -34,10 +34,6 @@ import Script from "next/script";
 const HomePage = () => {
     return (
         <>
-            <Head>
-                <link rel="icon" type="image/ico" href="/favicon.ico" />
-            </Head>
-
             <Script
                 strategy="afterInteractive"
                 src="https://www.googletagmanager.com/gtag/js?id=G-TKN1VDPJBY"

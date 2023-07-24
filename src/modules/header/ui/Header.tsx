@@ -43,7 +43,7 @@ const Header = (props: Props) => {
                     className="shadow-sm shadow-slate-200
                     bg-white py-[2px] px-10 fixed w-full top-0 right-0 z-20"
                 >
-                    <div className="max-w-[1300px] mx-auto justify-between flex">
+                    <div className="max-w-[1300px] mx-auto justify-center sm:justify-between flex flex-col sm:flex-row">
                         <div
                             onClick={() => router.push("/")}
                             className="relative basis-1/2 h-10 cursor-pointer"

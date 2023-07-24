@@ -5,7 +5,7 @@ const Menu = () => {
     const router = useRouter();
 
     return (
-        <nav className="flex items-center">
+        <nav className="flex items-center justify-center py-2">
             <ul className="flex gap-8 justify-center select-none font-bold">
                 <MenuLink name="Tjenester" to="/#services" />
                 <MenuLink name="Priser" to="/#prices" />

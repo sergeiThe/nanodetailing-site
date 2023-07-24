@@ -5,27 +5,27 @@ const HexLinks = () => {
     const router = useRouter();
 
     return (
-        <div className="relative bottom-20">
+        <div className="relative bottom-20 md:translate-x-0 translate-x-[150px]">
             <LinkHex
-                className="top-[-101px] right-[303px]"
+                className="md:top-[-101px] top-[-60px] md:right-[303px] right-[188px]"
                 linkContent="Kontakt"
                 image="tesla2.png"
                 onClick={() => router.push("/kontakt")}
             />
             <LinkHex
-                className="top-[-101px] right-[101px]"
+                className="md:top-[-101px] top-[-60px] md:right-[101px] right-[61px]"
                 linkContent="Tjenester"
                 image="tesla1.png"
                 anchor="services"
             />
             <LinkHex
-                className="top-[81px] right-[0px]"
+                className="md:top-[81px] top-[60px] md:right-[0px] right-[-2px]"
                 linkContent="Faste priser"
                 image="audi.png"
                 anchor="prices"
             />
             <LinkHex
-                className="top-[81px] right-[202px]"
+                className="md:top-[81px] top-[60px] md:right-[202px] right-[125px]"
                 linkContent="Hendlex kurs"
                 image="volk1.png"
                 anchor="course"

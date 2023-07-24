@@ -7,7 +7,7 @@ interface Props {
 
 const SecondaryPageMainSection = (props: Props) => {
     return (
-        <div className=" bg-opacity-0 h-80 pt-10 flex flex-col justify-center relative">
+        <div className=" bg-opacity-0 h-80 pt-10 flex flex-col justify-center gap-10 items-center relative">
             <Image
                 src={`/images/${props.image}`}
                 fill

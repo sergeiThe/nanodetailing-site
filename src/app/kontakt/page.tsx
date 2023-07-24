@@ -10,7 +10,9 @@ const ContactPage = () => {
             <Header offsetBeforeShow={0} />
             <main className="min-h-screen">
                 <SecondaryPageMainSection title="Kontakt" image="hexbg.jpg" />
-                <ContactForm />
+                <div className="px-4">
+                    <ContactForm />
+                </div>
             </main>
             <Footer />
         </>

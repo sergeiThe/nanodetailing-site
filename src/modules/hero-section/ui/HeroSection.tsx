@@ -8,7 +8,7 @@ const HeroSection = () => {
     const router = useRouter();
 
     return (
-        <section className="min-h-screen md:px-10 px-4   flex items-center relative overflow-hidden z-0">
+        <section className="min-h-screen md:px-10 px-4 pt-5  flex items-center relative overflow-hidden z-0">
             <video
                 className="absolute top-0  right-0 -z-20 min-w-full min-h-full brightness-[30%] object-cover"
                 autoPlay

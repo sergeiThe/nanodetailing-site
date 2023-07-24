@@ -5,7 +5,7 @@ import Image from "next/image";
 const PricesSection = () => {
     return (
         <section
-            className="relative bg-slate-600 bg-opacity-30 py-20 px-10"
+            className="relative bg-slate-600 bg-opacity-30 py-20 md:px-10 px-4"
             id="prices"
         >
             <Image
@@ -22,7 +22,7 @@ const PricesSection = () => {
                         Vi har faste priser for enkelte bilmerker. Er ikke bilen
                         din på lista, ta kontakt med oss
                     </p>
-                    <div className="grid grid-cols-3 gap-x-10  max-w-[900px] mx-auto">
+                    <div className="grid sm:grid-cols-2 md:grid-cols-3  gap-x-10  max-w-[900px] mx-auto">
                         <Button
                             onClick={() => alert("opening prices...")}
                             text="TESLA"

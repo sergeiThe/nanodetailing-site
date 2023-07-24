@@ -38,6 +38,8 @@ body {
         );
         background-color: #ffffff;
 
+        user-select: none;
+
         height: 240px;
         width: 200px;
 
@@ -151,8 +153,13 @@ body {
         }
 
         .hex-link:hover .hex-link-img::after {
-            width: 50%;
-            height: 50%;
+            width: 80%;
+            height: 80%;
+        }
+
+        .hex-link:active .hex-link-img::after {
+            width: 70%;
+            height: 70%;
         }
         .hex-link:hover .hex-link-img {
             height: 150px;
@@ -209,7 +216,8 @@ body {
 
         .hex-link-anchor {
             margin: auto;
-            font-size: 1rem;
+            font-size: 0.9rem;
+            font-weight: 400;
             color: rgb(255, 255, 255);
             z-index: 10;
             display: block;

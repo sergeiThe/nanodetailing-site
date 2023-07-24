@@ -43,7 +43,7 @@ const HeroSection = () => {
                             at du skal kunne oppnå de beste resultatene så trygt
                             og effektivt som mulig.
                         </p>
-                        <div className="mx-auto inline-block">
+                        <div className="mx-auto md:inline-block hidden">
                             <Button
                                 style={{ marginTop: "10px" }}
                                 text="Kontakt"

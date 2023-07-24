@@ -21,7 +21,7 @@ const ServicesSection = () => {
         []
     );
     return (
-        <section className="min-h-[1000px] px-10 py-20" id="services">
+        <section className="min-h-[1000px] md:px-10 px-4 py-20" id="services">
             <Particles
                 id="tsparticles"
                 init={particlesInit}

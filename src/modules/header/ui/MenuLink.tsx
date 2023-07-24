@@ -1,4 +1,4 @@
-import { Link } from "react-scroll";
+import Link from "next/link";
 
 interface Props {
     to: string;
@@ -8,15 +8,7 @@ interface Props {
 const MenuLink = (props: Props) => {
     return (
         <li className="cursor-pointer hover:text-red-700">
-            <Link
-                to={props.to}
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-            >
-                {props.name}
-            </Link>
+            <Link href={props.to}>{props.name}</Link>
         </li>
     );
 };

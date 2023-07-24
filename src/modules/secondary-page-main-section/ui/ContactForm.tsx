@@ -54,7 +54,11 @@ const ContactForm = () => {
                     <Button text="Send" variant="primary" />
                 </Form>
             )}
-            {formSent && <div className="">Takk!</div>}
+            {formSent && (
+                <div className="text-center text-8xl py-24 text-red-700">
+                    Takk!
+                </div>
+            )}
         </div>
     );
 };

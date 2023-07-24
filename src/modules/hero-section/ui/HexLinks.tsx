@@ -1,13 +1,16 @@
 import { LinkHex } from "@/components/link-hexagonal";
+import { useRouter } from "next/navigation";
 
 const HexLinks = () => {
+    const router = useRouter();
+
     return (
         <div className="relative bottom-20">
             <LinkHex
                 className="top-[-101px] right-[303px]"
                 linkContent="Kontakt"
                 image="tesla2.png"
-                anchor="contact"
+                onClick={() => router.push("/kontakt")}
             />
             <LinkHex
                 className="top-[-101px] right-[101px]"

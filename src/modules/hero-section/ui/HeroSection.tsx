@@ -1,12 +1,11 @@
 "use client";
 import { Button } from "@/shared/ui/button/Button";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import HexLinks from "./HexLinks";
 
 const HeroSection = () => {
-    const openContactModule = () => {
-        alert("Contact..");
-    };
+    const router = useRouter();
 
     return (
         <section className="h-screen px-10  flex items-center relative overflow-hidden z-0">
@@ -47,7 +46,7 @@ const HeroSection = () => {
                             style={{ marginTop: "10px" }}
                             text="Kontakt"
                             variant="primary"
-                            onClick={openContactModule}
+                            onClick={() => router.push("/kontakt")}
                         />
                     </div>
                 </div>

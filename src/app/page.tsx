@@ -1,10 +1,16 @@
-import Footer from "@/modules/footer/ui/Footer";
+import { Footer } from "@/modules/footer";
+import { Header } from "@/modules/header";
+import { HeroSection } from "@/modules/hero-section";
+import { ServicesSection } from "@/modules/services-section";
 
 export default function Home() {
     return (
         <>
-            <header></header>
-            <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>
+            <Header />
+            <main className="min-h-screen">
+                <HeroSection />
+                <ServicesSection />
+            </main>
             <Footer />
         </>
     );

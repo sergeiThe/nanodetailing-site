@@ -1,11 +1,10 @@
 "use client";
 import { Button } from "@/shared/ui/button/Button";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const Footer = () => {
-    const handleOpenContactForm = () => {
-        alert("Opening contact");
-    };
+    const router = useRouter();
 
     return (
         <>
@@ -33,7 +32,7 @@ const Footer = () => {
                         <Button
                             text="Kontaktskjema"
                             variant="primary"
-                            onClick={handleOpenContactForm}
+                            onClick={() => router.push("/kontakt")}
                         />
                     </div>
                     <div className="basis-1/2">

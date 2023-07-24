@@ -1,6 +1,9 @@
+import { useRouter } from "next/navigation";
 import MenuLink from "./MenuLink";
 
 const Menu = () => {
+    const router = useRouter();
+
     const openContactModal = () => {
         alert("Opening contact model");
     };
@@ -12,7 +15,7 @@ const Menu = () => {
                 <MenuLink name="Kurs" to="course" />
 
                 <li className="cursor-pointer hover:text-red-700">
-                    <span onClick={() => openContactModal()}>Kontakt</span>
+                    <span onClick={() => router.push("/kontakt")}>Kontakt</span>
                 </li>
             </ul>
         </nav>

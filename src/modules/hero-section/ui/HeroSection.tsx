@@ -44,6 +44,7 @@ const HeroSection = () => {
                         </p>
 
                         <Button
+                            style={{ marginTop: "10px" }}
                             text="Kontakt"
                             variant="primary"
                             onClick={openContactModule}

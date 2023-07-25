@@ -23,7 +23,7 @@ const PricesSection = () => {
                     <h2 className="text-5xl text-center">Faste priser</h2>
                     <p className="max-w-[700px] text-center mx-auto py-6">
                         Vi har faste priser for enkelte bilmerker. Er ikke bilen
-                        din på lista, ta kontakt med oss
+                        din på lista, ta kontakt med oss!
                     </p>
                     <div className="grid sm:grid-cols-2 md:grid-cols-3  gap-x-10  max-w-[900px] mx-auto">
                         <Button

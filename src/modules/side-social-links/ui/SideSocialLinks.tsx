@@ -8,7 +8,7 @@ const SideSocialLinks = () => {
     const [show, setShow] = useState<boolean>(false);
 
     const navHandler = () => {
-        if (window.scrollY < 100) {
+        if (window.scrollY < 200) {
             setShow(false);
         } else {
             setShow(true);
@@ -16,7 +16,7 @@ const SideSocialLinks = () => {
     };
 
     useEffect(() => {
-        if (window.scrollY < 100) {
+        if (window.scrollY < 200) {
             setShow(false);
         } else {
             setShow(true);
@@ -35,7 +35,7 @@ const SideSocialLinks = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="fixed right-1 sm:right-5 sm:bottom-1/2 bottom-2/3 z-40 flex flex-col gap-4 text-gray-500 text-2xl"
+                    className="fixed right-1 sm:right-5 sm:top-1/2 top-1/3 z-40 flex flex-col gap-4 text-gray-500 text-2xl"
                 >
                     <LinkExternal
                         className="hover:text-red-700 cursor-pointer"

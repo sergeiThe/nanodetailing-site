@@ -1,6 +1,6 @@
 const CourseSection = () => {
     return (
-        <section className="relative py-20 md:px-10 px-4" id="course">
+        <section className="relative py-20 md:px-10 px-8" id="course">
             <div className="">
                 <div className="">
                     <h2 className="text-5xl text-center py-5">Hendlex kurs</h2>

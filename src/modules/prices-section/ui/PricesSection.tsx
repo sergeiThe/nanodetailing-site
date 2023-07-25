@@ -8,7 +8,7 @@ const PricesSection = () => {
     const dispatch = useAppDispatch();
     return (
         <section
-            className="relative bg-slate-600 bg-opacity-30 py-20 md:px-10 px-4"
+            className="relative bg-slate-600 bg-opacity-30 py-20 md:px-10 px-8"
             id="prices"
         >
             <Image

@@ -1,8 +1,11 @@
 "use client";
+import { useAppDispatch } from "@/shared/hooks/useAppDispatch";
+import { open } from "@/shared/model/pricesSlice";
 import { Button } from "@/shared/ui/button/Button";
 import Image from "next/image";
 
 const PricesSection = () => {
+    const dispatch = useAppDispatch();
     return (
         <section
             className="relative bg-slate-600 bg-opacity-30 py-20 md:px-10 px-4"
@@ -24,47 +27,47 @@ const PricesSection = () => {
                     </p>
                     <div className="grid sm:grid-cols-2 md:grid-cols-3  gap-x-10  max-w-[900px] mx-auto">
                         <Button
-                            onClick={() => alert("opening prices...")}
+                            onClick={() => dispatch(open("tesla"))}
                             text="TESLA"
                             variant="primary"
                         />
                         <Button
-                            onClick={() => alert("opening prices...")}
+                            onClick={() => dispatch(open("nio"))}
                             text="NIO"
                             variant="primary"
                         />
                         <Button
-                            onClick={() => alert("opening prices...")}
+                            onClick={() => dispatch(open("byd"))}
                             text="BYD"
                             variant="primary"
                         />
                         <Button
-                            onClick={() => alert("opening prices...")}
+                            onClick={() => dispatch(open("voyah"))}
                             text="VOYAH"
                             variant="primary"
                         />
                         <Button
-                            onClick={() => alert("opening prices...")}
+                            onClick={() => dispatch(open("citroen-ds7"))}
                             text="CITROEN DS7"
                             variant="primary"
                         />
                         <Button
-                            onClick={() => alert("opening prices...")}
+                            onClick={() => dispatch(open("volvo-xc40"))}
                             text="VOLVO XC40"
                             variant="primary"
                         />
                         <Button
-                            onClick={() => alert("opening prices...")}
+                            onClick={() => dispatch(open("skoda-enyaq"))}
                             text="SKODA ENYAQ"
                             variant="primary"
                         />
                         <Button
-                            onClick={() => alert("opening prices...")}
+                            onClick={() => dispatch(open("polestar-2"))}
                             text="POLESTAR 2"
                             variant="primary"
                         />
                         <Button
-                            onClick={() => alert("opening prices...")}
+                            onClick={() => dispatch(open("volkswagen-id.4"))}
                             text="VOLKSWAGEN ID.4"
                             variant="primary"
                         />

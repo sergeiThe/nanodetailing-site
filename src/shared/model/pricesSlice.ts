@@ -20,7 +20,7 @@ const initialState: PricesState = {
 };
 
 export const pricesSlice = createSlice({
-    name: "service",
+    name: "price",
     initialState,
     reducers: {
         open(state, action: PayloadAction<Prices>) {

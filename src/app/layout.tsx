@@ -30,7 +30,7 @@ export default function RootLayout({
             <body className={font.className}>
                 <ReduxProvider>
                     <div id="backdrop"></div>
-                    <div id="service-modal"></div>
+                    <div id="modal"></div>
                     {children}
                 </ReduxProvider>
             </body>

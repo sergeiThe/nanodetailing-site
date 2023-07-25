@@ -4,8 +4,6 @@ import { useAppSelector } from "@/shared/hooks/useAppSelector";
 import { close } from "@/shared/model/serviceSlice";
 import { AnimatePresence, motion as m } from "framer-motion";
 import Image from "next/image";
-import { useEffect, useState } from "react";
-import { createPortal } from "react-dom";
 import { GrClose } from "react-icons/gr";
 import { ServiceBodyContent, services } from "../consts/services";
 
@@ -47,7 +45,7 @@ const ServiceModalContent = () => {
                 >
                     <span
                         onClick={handleClose}
-                        className="rounded-full p-3 bg-gray-300 cursor-pointer hover:bg-red-900 absolute text-3xl top-10 right-10 z-50"
+                        className="rounded-full sm:p-3 p-1 bg-gray-300 cursor-pointer hover:bg-red-900 absolute sm:text-3xl text-xl sm:top-10 top-4 sm:right-10 right-4 z-50"
                     >
                         <GrClose />
                     </span>
@@ -81,20 +79,4 @@ const ServiceModalContent = () => {
     );
 };
 
-const ServiceModal = () => {
-    const [domReady, setDomReady] = useState<boolean>(false);
-
-    useEffect(() => {
-        setDomReady(true);
-    }, []);
-
-    return (
-        domReady &&
-        createPortal(
-            <ServiceModalContent />,
-            document.getElementById("service-modal") as HTMLElement
-        )
-    );
-};
-
-export default ServiceModal;
+export default ServiceModalContent;

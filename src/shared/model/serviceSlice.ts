@@ -1,13 +1,14 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 
-type Service =
+export type Service =
+    | "keramisk-coating"
     | "chrome-delete"
     | "ppf"
     | "helfoliering"
     | "solfilm"
     | "polering";
 
-interface ServiceState {
+export interface ServiceState {
     current?: Service | null | undefined;
 }
 

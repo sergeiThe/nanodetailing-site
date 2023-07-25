@@ -13,6 +13,16 @@ export type ServiceBody = {
 type ServicesRecord = Partial<Record<Service, ServiceBody>>;
 
 export const services: ServicesRecord = {
+    "keramisk-coating": {
+        name: "Keramisk lakkforsegling",
+        content: {
+            p1: "Keramisk lakkforsegling er en avansert metode der man bruker nanoteknologi og legger et lag kvarts på lakkoverflaten. Overflatespenningen i lakken endres slik at den vannavvisende(hydrofobiske) effekten blir optimal.",
+            p2: "Behandlingens varighet er lengre enn for syntetisk lakkforsegling. Lakkforsegling passer for deg som ønsker en lettere bilvedlikehold, samt redusere bilens verditap.",
+            p3: "Du lurer kanskje på hva fordelene med å ha et keramisk belegg bilen er. Enkelt sagt kan et keramisk belegg betraktes som et langsiktig alternativ til tradisjonelle voks- eller malingsforseglinger.",
+            p4: "Å gi enestående beskyttelse for noen år i stedet for uker eller måneder betyr at du vil ha det lettere for å vedlikeholde kjøretøyets utseende. Et keramisk belegg vil holde lakken renere i lengre tid, noe som resulterer i mindre tid på å vaske bilen og mer tid til å nyte den.",
+        },
+        image: "tesla1.png",
+    } satisfies ServiceBody,
     ppf: {
         name: "PPF",
         content: {

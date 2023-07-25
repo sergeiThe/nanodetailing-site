@@ -16,7 +16,7 @@ const HexLinks = () => {
                 className={`md:top-[-90px] top-[-60px] md:right-[300px] right-[183px]`}
                 image="tesla3.png"
                 linkContent="Keramisk lakkforsegling"
-                onClick={() => alert("go to the service...")}
+                onClick={() => dispatch(open("keramisk-coating"))}
             />
             <LinkHex
                 className={`md:top-[-90px] top-[-60px] md:right-[100px] right-[61px]`}

@@ -6,7 +6,12 @@ interface Props extends AnchorHTMLAttributes<HTMLAnchorElement> {
 
 const LinkExternal = (props: Props) => {
     return (
-        <a target="_blank" rel="noopener noreferrer" {...props}>
+        <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={props.href}
+            className={props.className}
+        >
             {props.linkContent}
         </a>
     );

@@ -41,7 +41,7 @@ const ServiceModalContent = () => {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.2, ease: "easeOut" }}
                     exit={{ opacity: 0 }}
-                    className="h-screen w-full fixed bg-black bg-opacity-90 z-50 p-10 flex items-center"
+                    className="h-screen w-full fixed bg-black bg-opacity-90 z-50 sm:p-10 p-4 flex items-center overflow-auto"
                 >
                     <span
                         onClick={handleClose}
@@ -55,7 +55,7 @@ const ServiceModalContent = () => {
                                 {currentServiceModal &&
                                     services[currentServiceModal]?.name}
                             </h3>
-                            <div className="text-white flex flex-col gap-4">
+                            <div className="text-white flex flex-col gap-4 text-sm">
                                 {content}
                             </div>
                         </div>

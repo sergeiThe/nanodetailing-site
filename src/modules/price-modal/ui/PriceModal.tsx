@@ -12,6 +12,8 @@ const PriceModal = () => {
     function handleClose() {
         dispatch(close());
     }
+
+    console.log(`/images/prices/${currentPriceModal}.jpg`);
     return (
         <AnimatePresence mode="wait">
             {currentPriceModal && (

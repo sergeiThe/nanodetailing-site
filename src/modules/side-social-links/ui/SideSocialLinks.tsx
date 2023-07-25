@@ -35,7 +35,7 @@ const SideSocialLinks = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="fixed right-1 sm:right-5 sm:top-1/2 top-1/3 z-40 flex flex-col gap-4 text-gray-500 text-2xl"
+                    className="fixed right-1 sm:right-5 sm:bottom-1/2 bottom-2/3 z-40 flex flex-col gap-4 text-gray-500 text-2xl"
                 >
                     <LinkExternal
                         className="hover:text-red-700 cursor-pointer"

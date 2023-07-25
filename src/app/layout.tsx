@@ -1,3 +1,4 @@
+import { Footer } from "@/modules/footer";
 import { SideSocialLinks } from "@/modules/side-social-links";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
@@ -35,6 +36,7 @@ export default function RootLayout({
                     <SideSocialLinks />
                     {children}
                 </ReduxProvider>
+                <Footer />
             </body>
         </html>
     );

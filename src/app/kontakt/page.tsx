@@ -1,8 +1,7 @@
 "use client";
-import { Footer } from "@/modules/footer";
+import { ContactForm } from "@/components/contact-form";
 import { Header } from "@/modules/header";
 import { SecondaryPageMainSection } from "@/modules/secondary-page-main-section";
-import ContactForm from "@/modules/secondary-page-main-section/ui/ContactForm";
 
 const ContactPage = () => {
     return (
@@ -14,7 +13,6 @@ const ContactPage = () => {
                     <ContactForm />
                 </div>
             </main>
-            <Footer />
         </>
     );
 };

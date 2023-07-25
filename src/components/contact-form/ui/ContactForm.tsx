@@ -8,6 +8,7 @@ import emailjs from "@emailjs/browser";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
+// TODO: Add contact information
 const ContactForm = () => {
     const [formSent, setFormSent] = useState<boolean>(false);
 
@@ -52,6 +53,9 @@ const ContactForm = () => {
                     <Textarea id="beskjed" />
 
                     <Button text="Send" variant="primary" />
+                    <div>Vestre Rosten 102, Trondheim 7075</div>
+                    <div>+47 405 90 005</div>
+                    <div>post@nanodetailing.no</div>
                 </Form>
             )}
             {formSent && (

@@ -1,7 +1,7 @@
 import { useAppDispatch } from "@/shared/hooks/useAppDispatch";
 import { useAppSelector } from "@/shared/hooks/useAppSelector";
 import { close } from "@/shared/model/pricesSlice";
-import { AnimatePresence, motion as m } from "framer-motion";
+import { motion as m } from "framer-motion";
 import Image from "next/image";
 import { GrClose } from "react-icons/gr";
 
@@ -15,7 +15,8 @@ const PriceModal = () => {
 
     console.log(`/images/prices/${currentPriceModal}.jpg`);
     return (
-        <AnimatePresence mode="wait">
+        // <AnimatePresence mode="wait">
+        <>
             {currentPriceModal && (
                 <m.div
                     initial={{ opacity: 0 }}
@@ -43,7 +44,8 @@ const PriceModal = () => {
                     </div>
                 </m.div>
             )}
-        </AnimatePresence>
+        </>
+        // </AnimatePresence>
     );
 };
 

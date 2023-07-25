@@ -2,7 +2,7 @@
 import { useAppDispatch } from "@/shared/hooks/useAppDispatch";
 import { useAppSelector } from "@/shared/hooks/useAppSelector";
 import { close } from "@/shared/model/serviceSlice";
-import { AnimatePresence, motion as m } from "framer-motion";
+import { motion as m } from "framer-motion";
 import Image from "next/image";
 import { GrClose } from "react-icons/gr";
 import { ServiceBodyContent, services } from "../consts/services";
@@ -34,7 +34,7 @@ const ServiceModalContent = () => {
     }
 
     return (
-        <AnimatePresence mode="wait">
+        <>
             {currentServiceModal && (
                 <m.div
                     initial={{ opacity: 0 }}
@@ -75,7 +75,7 @@ const ServiceModalContent = () => {
                     </div>
                 </m.div>
             )}
-        </AnimatePresence>
+        </>
     );
 };
 

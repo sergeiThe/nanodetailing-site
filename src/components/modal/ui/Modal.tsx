@@ -2,6 +2,7 @@ import { PriceModalContent } from "@/modules/price-modal";
 import ServiceModalContent from "@/modules/service-modal/ui/ServiceModal";
 import { useAppDispatch } from "@/shared/hooks/useAppDispatch";
 import { useAppSelector } from "@/shared/hooks/useAppSelector";
+import { AnimatePresence } from "framer-motion";
 import { ReactNode, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 
@@ -30,7 +31,7 @@ const Modal = () => {
     return (
         domReady &&
         createPortal(
-            currentModal,
+            <AnimatePresence mode="wait">{currentModal}</AnimatePresence>,
             document.getElementById("modal") as HTMLElement
         )
     );

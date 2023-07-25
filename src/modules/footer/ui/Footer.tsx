@@ -1,5 +1,4 @@
 "use client";
-import { Button } from "@/shared/ui/button/Button";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
@@ -27,11 +26,11 @@ const Footer = () => {
                         oppmerksomhet på detaljer.
                     </p>
 
-                    <Button
+                    {/* <Button
                         text="Kontaktskjema"
                         variant="primary"
                         onClick={() => router.push("/kontakt")}
-                    />
+                    /> */}
                 </div>
                 <div className="md:basis-1/2">
                     <div className="relative md:h-full h-32 -ml-12">

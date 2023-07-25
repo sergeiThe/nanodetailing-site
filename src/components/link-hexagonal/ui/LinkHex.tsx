@@ -1,12 +1,14 @@
 import Image from "next/image";
+import Link from "next/link";
 import { HTMLAttributes } from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
     linkContent: string;
     className?: string | undefined;
     image: string;
     anchor?: string | null | undefined;
+    pageLink?: string;
 }
 
 const LinkHex = (props: Props) => {
@@ -20,7 +22,7 @@ const LinkHex = (props: Props) => {
                     src={"/images/" + props.image}
                 />
                 {props.anchor && (
-                    <Link
+                    <ScrollLink
                         to={props.anchor}
                         spy={true}
                         smooth={true}
@@ -29,10 +31,15 @@ const LinkHex = (props: Props) => {
                         className="hex-link-anchor"
                     >
                         {props.linkContent}
-                    </Link>
+                    </ScrollLink>
                 )}
-                {!props.anchor && (
+                {!props.anchor && !props.pageLink && (
                     <a className="hex-link-anchor">{props.linkContent}</a>
+                )}
+                {props.pageLink && (
+                    <Link className="hex-link-anchor" href={props.pageLink}>
+                        {props.linkContent}
+                    </Link>
                 )}
             </div>
         </div>

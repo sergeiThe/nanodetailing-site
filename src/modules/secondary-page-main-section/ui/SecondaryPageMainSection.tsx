@@ -14,6 +14,7 @@ const SecondaryPageMainSection = (props: Props) => {
                 alt="bg"
                 className="-z-10 brightness-[20%]"
                 style={{ objectFit: "cover" }}
+                priority
             />
             <h1 className="text-center text-white text-5xl">{props.title}</h1>
         </div>

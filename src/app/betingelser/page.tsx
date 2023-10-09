@@ -92,13 +92,15 @@ const Conditions = () => {
             Påfyll av coating er nødvendig for å bevare coatingens glans og
             hydrofobiske effekt. Det må påregnes at coatingens glans og
             hydrofobiske effekt ikke vedvarer dersom serviceprogrammet ikke
-            følges. Serviceprogrammet innebærer at kjøper kan komme tilbake
+            følges. <br></br>
+            <br></br>Serviceprogrammet innebærer at kjøper kan komme tilbake
             hvert andre år i angjeldende periode for påfyll av coating til en
-            redusert pris. Pris og avtalevilkår for påfyll av coating iht.
+            redusert pris.<br></br>
+            <br></br> Pris og avtalevilkår for påfyll av coating iht.
             serviceprogrammet følger av de til enhver tid gjeldende vilkår som
-            framgår av Selskapets nettsider. Det tilbys også håndvask av bilen
-            for en redusert pris ved påfyll av coating etter nærmere avtale med
-            kjøper.
+            framgår av Selskapets nettsider.<br></br>
+            <br></br> Det tilbys også håndvask av bilen for en redusert pris ved
+            påfyll av coating etter nærmere avtale med kjøper.
           </p>
 
           <h4>2.1.2 Keramisk coating – Vedlikehold</h4>
@@ -106,75 +108,365 @@ const Conditions = () => {
             Keramisk coating innebærer ikke at lakken blir helt vedlikeholdsfri
             og ripesistent, men vil holde seg fin lenge med riktig vedlikehold,
             herunder ved årlig påfyll av coating i henhold til vår servicepakke.
+            <br></br>
+            <br></br>
             Bil med keramisk coating må behandles varsomt, og ikke utsettes for
-            hard mekanisk vask, kraftig børstevask, maskinpolering, bruk av
-            kjemiske midler som kan skade coatingen eller annen håndtering som
-            kan skade lakken. Følger kjøper ikke vedlikeholdsrådene fra Selger,
-            kan garantien bortfalle.
+            hard mekanisk slitasje. Bil med keramisk coating skal ikke vaskes i
+            vaskemaskin med børste, og det bør ikke brukes harde kjemikaler. Ved
+            bruk av høytrykkspyler må utløpet holdes minst en meter fra
+            overflaten. Bruk av snøbørste frarådes.<br></br>
+            <br></br> Bil med keramisk coating skal ikke vaskes første 14 dager
+            etter at coatingen har blitt påført.
           </p>
 
-          <h3>2.2 Bilpleieprodukter</h3>
+          <h3>2.2 Solfilm</h3>
+          <h4>2.2.1 Solfilm - vedlikehold</h4>
           <p>
-            Våre bilpleieprodukter er av høy kvalitet og er nøye utvalgt for å
-            sikre best mulig resultat. Vi tilbyr produkter for vask, polering,
-            rengjøring, og beskyttelse av bilen din. Utførlig informasjon om
-            hvert produkt finner du på vår nettside, sammen med bruksanvisninger
-            og anbefalinger for optimal bruk.
+            Etter montering av solfilm trenger limet tid til å tørke. Ved på
+            ført solfilm kan derfor vinduene ikke tas opp og ned tidligst før
+            det har gå tt 3 døgn. Dersom det er kaldt vær eller oppholdsvær, kan
+            tørketiden bli lengre. <br></br>
+            <br></br>Det kan forekomme små vannperler og/eller dampet overflate
+            i filmen under tørkingen. Dette er normalt og vil forsvinne nå r
+            limet har tørket helt. <br></br>
+            <br></br>Solfilmen skal ikke vaskes før det har gått minst 30 dager
+            etter installasjonen. <br></br>
+            <br></br>For å unngå risiko for at solfilmen fryser på gummien ved
+            frost, bør vinduene smøres med silikon før vinteren. For øvrig
+            anbefales jevnlig vask og tørk av solfilmen med rene og myke
+            materialer, som eksempel mikrofiberklut eller syntetisk svamp for å
+            maksimere filmens levetid.
           </p>
 
-          <h3>2.3 Priser og betaling</h3>
+          <h4>2.2.2 Solfilm - Garanti</h4>
           <p>
-            Prisene for våre tjenester og produkter er oppgitt på våre nettsider
-            og kan endres uten varsel. Betaling for tjenester og produkter skal
-            skje i henhold til de betalingsalternativene som tilbys på
-            nettsiden. Eventuelle rabatter eller tilbud vil bli gjort
-            tilgjengelige på nettsiden, og vil ha spesifikke vilkår og
-            gyldighetsperioder.
+            Selskapet garanterer at det i en periode på fem (5) å r
+            (“Garantiperioden”) fra datoen for den første installasjonen, at
+            Selskapet vil utbedre fabrikasjonsfeil på solfilmen (Produktet) som:
+            misfarging, blemmer og sprekker. <br></br>
+            <br></br>Denne garantien gjelder bare for Produktet som er
+            installert av Selskapet, og gjelder kun så lenge kjøperen er eier av
+            bilen som har få tt produktet. Garantien er personlig for kjøper, og
+            kan ikke overdras. <br></br>
+            <br></br>Dekning under denne garantien gis ved å gi selskapet
+            melding om at krav gjøres gjeldende under garantien, sammen med en
+            detaljert beskrivelse av den påståtte mangelen. Kjøper må varsle
+            Selskapet skriftlig og oppgi navn, telefonnummer og adresse.{" "}
+            <br></br>
+            <br></br>Ved krav under garantien vil Selskapet, erstatte det
+            defekte Produktet uten kostnad dersom Produktet svikter eller ikke
+            fungerer som garantert på grunn av en produksjonsfeil i
+            Garantiperioden. Dette med de forbehold som er angitt i denne
+            garantien.<br></br>
+            <br></br> Utskifting av den defekte filmen er det eneste
+            rettsmiddelet for alle produkter som dekkes av denne garanti.
+            Selskapets forpliktelse til reparasjon eller erstatning er begrenset
+            til reparasjon eller utskifting med produktene som er tilgjengelige
+            på tidspunktet for reparasjonen eller utskiftingen. Videre begrenses
+            garantien til reparasjon eller utskifting av bare det spesifikke
+            produktet som svikter på grunn av en produksjonsfeil. Ethvert
+            reparert eller erstattet produkt forblir underlagt garantiperioden,
+            og enhver reparasjon eller erstatning forlenger ikke den
+            opprinnelige garantiperioden på noen må te eller starter en ny
+            garantiperiode.
+          </p>
+          <p>
+            Garantien dekker følgende tilfeller av fabrikasjonsfeil ved
+            Produktet:
+          </p>
+          <ul>
+            <li>
+              Feil ved Produktets klebingsevne, avflaking, blemmer, skolding,
+              avlaminering, og andre fremstillingsfeil ved Produktet.
+            </li>
+            <li>
+              Uvanlig misfarging som ikke skyldes alminnelig falming av filmen
+              over tid og/eller som følge av ytre på kjenning
+            </li>
+            <li>Sprekk- og revnedannelse som ikke skyldes ytre påvirkning</li>
+            <li>
+              Bortfall av- eller drastisk reduksjon av filmens solreflekterende
+              egenskaper
+            </li>
+          </ul>
+          <p>
+            Garantien dekker kun produksjonsfeil ved Produktet, hvilket ikke
+            innbefatter feil forå rsaket av manglende samsvar med Selskapets
+            veiledning for vedlikehold eller andre instruksjoner om håndtering
+            av Produktet. Slike feil inkluderer, men er ikke begrenset til:
+            fysisk misbruk av Produktet, kjemisk misbruk av Produktet (f.eks.
+            harde rengjøringsmidler og løsemidler), termisk misbruk av produktet
+            (f.eks. overdreven varme eller kulde) eller feil lagring,
+            installasjon, håndtering og/eller bruk av Produktet. Garantien
+            dekker videre ikke skader som oppstå r som følge av ulykker,
+            steinsprutskader, normal slitasje, eller forsettlig skade på
+            Produktet av noe slag. Garantien dekker heller ikke ordinær falming
+            av solfilmen over tid, og kjøper er innforstå tt med at slik falming
+            vil forekomme. Garantien dekker heller ikke skader eller falming av
+            filmen som følge av ordinær slitasje.
           </p>
 
-          <h3>2.4 Personvern</h3>
+          <h3>2.3 PPF lakkbeskyttelsesfilm</h3>
+          <h4>2.3.1 PPF lakkbeskyttelsesfilm - Forbehold</h4>
           <p>
-            Vi respekterer ditt personvern og behandler personopplysninger i
-            samsvar med gjeldende personvernlovgivning. Vennligst se vår
-            personvernerklæring for mer informasjon om hvordan vi samler inn,
-            bruker, og beskytter dine personopplysninger.
+            Kjøper er forut for monteringen av PPF lakkbeskyttelsesfilm gjort
+            uttrykkelig oppmerksom på at det kan forekomme strekkmerker i
+            filmen, og at slike strekkmerker ikke utgjør verken monteringsfeil
+            eller fabrikasjonsfeil, og må påregnes ved montering av PPF. <br />{" "}
+            <br />
+            Våre montører vil alltid gjøre sitt aller beste for å unngå
+            strekkmerker ved montering, men ved montering av PPF på store
+            overflater og/eller områder med mange hjørner og vinkler, er det
+            ikke til å unngå at strekkmerker kan forekomme. Slike strekkmerker
+            vil normalt være lite synlige, vil kun ha en estetisk effekt, og
+            griper ikke inn i foliens beskyttende egenskaper.
+          </p>
+          <h4>2.3.2 PPF lakkbeskyttelsesfilm - Vedlikehold</h4>
+          <p>
+            For at lakkbeskyttelsen skal holde seg fin, anbefales kun håndvask
+            av bilen. Selv om filmen har selvreparerende egenskaper, vil bruk av
+            automatisk bilvask med børster øke sannsynligheten for riper eller
+            uregelmessigheter i filmen. Selv om små riper kan reparere seg selv,
+            vil dypere riper kunne forbli synlige dersom de har penetrert
+            topplaget. <br /> <br />
+            Det er videre viktig at følgende vedlikehold og retningslinjer
+            overholdes etter at bilen har fått påført PPF lakkbeskyttelsesfilm:
+            <br /> <br />
+            Bilen skal ikke vaskes første 48 timer etter installasjonen <br />{" "}
+            <br />
+            Unngå direkte sprut med høytrykksspyler mot endestykkene av PPF
+            folien.
+            <br /> <br />
+            Ved bruk av høytrykkspyler må utløpet holdes minst en meter fra
+            overflaten. <br /> <br />
+            Ikke bruk voks med pigmenter, slipevoks eller voks som inneholder
+            nafta eller parafin. <br /> <br />
+            Ikke bruk slipeputer, klut eller svamp med slipende egenskaper,
+            eller sterke kjemikalier på folien
+            <br /> <br />
+            Filmen bør vokses minst hver 6. måned med kompatibel voks. <br />{" "}
+            <br />
+            Flekker fjernes umiddelbart. Vanskelige flekker fjernes med
+            isopropylalkohol. <br /> <br />
+            Det opplyses om at skitt og flekker som las ligge på folien kan
+            medføre avfarging dersom de ikke fjernes umiddelbart. <br /> <br />
+            Unngå rengjøring i direkte sollys, eller ved høye temperaturer
           </p>
 
-          <h3>2.5 Kontaktinformasjon</h3>
+          <h4>2.3.3 PPF - Garanti</h4>
           <p>
-            Har du spørsmål eller trenger hjelp, er du velkommen til å kontakte
-            oss:
+            Selskapet garanterer at det i en periode på ti (10) år
+            (“Garantiperioden”) fra datoen for den første installasjonen, at
+            Selskapet vil dekke feil på PPF lakkforseglingsfilm (Produktet) som:
+            misfarging, sprekker, blemmer og delaminering. <br /> <br />
+            Denne garantien gjelder bare for Produktet som er installert av
+            Selskapet, og gjelder kun så lenge kjøperen er eier av bilen som har
+            få tt produktet. Garantien er personlig for kjøper, og kan ikke
+            overdras.
+            <br /> <br />
+            Dekning under denne garantien gis ved å gi selskapet melding om at
+            krav gjøres gjeldende under garantien, sammen med en detaljert
+            beskrivelse av den påståtte mangelen. Du må varsle Selskapet
+            skriftlig og oppgi navn, telefonnummer og adresse. <br /> <br />
+            Ved krav under garantien vil Selskapet, etter eget valg, fjerne
+            eller erstatte Produktet uten kostnad hvis Produktet svikter eller
+            ikke fungerer som garantert på grunn av en produksjonsfeil i
+            Garantiperioden. Dette med de forbehold som er angitt i denne
+            garantien.
+            <br /> <br />
+            Hvis selskapet velger å erstatte produktet, vil selskapet la en
+            installatør etter eget valg fjerne og bruke produktet på nytt til
+            områder som er bestemt av Selskapet etter eget skjønn. Selskapet vil
+            dekke deler og arbeidskraft. Utskifting av den defekte filmen er det
+            eneste rettsmiddelet for alle produkter som dekkes av denne garanti.
+            Selskapets forpliktelse til reparasjon eller erstatning er begrenset
+            til reparasjon eller utskifting med produktene som er tilgjengelige
+            på tidspunktet for reparasjonen eller utskiftingen. Videre begrenses
+            garantien til reparasjon eller utskifting av bare det spesifikke
+            produktet som svikter på grunn av en produksjonsfeil. Ethvert
+            reparert eller erstattet produkt forblir underlagt garantiperioden,
+            og enhver reparasjon eller erstatning forlenger ikke den
+            opprinnelige garantiperioden på noen måte eller starter en ny
+            garantiperiode.
+            <br /> <br />
+            Garantien dekker følgende tilfeller av fabrikasjonsfeil ved
+            Produktet:
+            <ul>
+              <li>
+                Uvanlig misfarging som ikke skyldes alminnelig falming over tid
+                og/eller som følge av ytre på kjenning
+              </li>
+              <li>Sprekk- og revnedannelse som ikke skyldes ytre påvirkning</li>
+              <li>Blemming i produktet som ikke skyldes ytre påvirkning</li>
+            </ul>
+            Garantien dekker kun produksjonsfeil ved Produktet, hvilket ikke
+            innbefatter feil forårsaket av manglende samsvar med Selskapets
+            veiledning for vedlikehold eller andre instruksjoner om håndtering
+            av Produktet. Slike feil inkluderer, men er ikke begrenset til:
+            fysisk misbruk av Produktet, kjemisk misbruk av Produktet (f.eks.
+            harde rengjøringsmidler og løsemidler), termisk misbruk av produktet
+            (f.eks. overdreven varme eller kulde) eller feil lagring,
+            installasjon, håndtering og/eller bruk av Produktet. Garantien
+            dekker videre ikke skader som oppstår som følge av ulykker,
+            steinsprutskader, normal slitasje, eller forsettlig skade av noe
+            slag.
           </p>
-          <address>
-            <p>Nano Detailing AS</p>
-            <p>Adresse: Vestre Rosten 102, Trondheim</p>
-            <p>Telefon: 405 90 005</p>
-            <p>E-post: post@nanodetailing.no</p>
-          </address>
 
-          <h3>2.6 Endringer i leveringsvilkårene</h3>
+          <h3>2.4 Helfoliering</h3>
+          <h4>2.4.1 Helfoliering - Vedlikehold</h4>
           <p>
-            Vi forbeholder oss retten til å endre disse leveringsvilkårene fra
-            tid til annen. Eventuelle endringer vil bli publisert på våre
-            nettsider, og det er ditt ansvar å holde deg oppdatert om eventuelle
-            endringer. Endringer trer i kraft fra datoen de publiseres på
-            nettsiden.
+            Bilen skal ikke vaskes første 48 timer etter installasjonen <br />{" "}
+            <br /> Unngå direkte sprut med høytrykksspyler mot endestykkene av
+            folien.
+            <br /> <br /> Ved bruk av høytrykkspyler må utløpet holdes minst en
+            meter fra overflaten.
+            <br /> <br /> Bruk ikke voks med pigmenter, slipevoks eller voks som
+            inneholder nafta eller parafin. <br /> <br />
+            Bruk ikke slipeputer, eller sterke kjemikalier på folien Folien bør
+            vokses minst hver 6. måned med kompatibel voks. <br /> <br />
+            Flekker fjernes umiddelbart. Vanskelige flekker kan fjernes med
+            isopropylalkohol. Skitt og flekker som las ligge på folien kan
+            medføre avfarging av denne dersom de ikke fjernes umiddelbart.
+            <br /> <br />
+            Unngå rengjøring i direkte sollys, eller ved høye temperaturer
+          </p>
+          <h4>2.4.2 Helfoliering - Garanti</h4>
+          <p>
+            Selskapet garanterer at det i en periode på fem (5) år
+            (“Garantiperioden”) fra datoen for den første installasjonen, at
+            Selskapet vil dekke feil på helfoliering (Produktet) som:
+            misfarging, sprekker, blemmer og delaminering.
+            <br /> <br /> Denne garantien gjelder bare for Produktet som er
+            installert av Selskapet, og gjelder kun så lenge kjøperen er eier av
+            bilen som har få tt produktet. Garantien er personlig for kjøper, og
+            kan ikke overdras.
+            <br /> <br />
+            Dekning under denne garantien gis ved å gi selskapet melding om at
+            krav gjøres gjeldende under garantien, g sammen med en detaljert
+            beskrivelse av den påståtte mangelen. Du må varsle Selskapet
+            skriftlig og oppgi navn, telefonnummer og adresse. <br /> <br />
+            Ved krav under garantien vil Selskapet, etter eget valg, fjerne
+            eller erstatte Produktet uten kostnad hvis Produktet svikter eller
+            ikke fungerer som garantert på grunn av en produksjonsfeil i
+            Garantiperioden. Dette med de forbehold som er angitt i denne
+            garantien.
+            <br /> <br /> Hvis selskapet velger å erstatte produktet, vil
+            selskapet la en installatør etter eget valg fjerne og bruke
+            produktet på nytt til områder som er bestemt av Selskapet etter eget
+            skjønn. Selskapet vil dekke deler og arbeidskraft. Utskifting av den
+            defekte filmen er det eneste rettsmiddelet for alle produkter som
+            dekkes av denne garanti. Selskapets forpliktelse til reparasjon
+            eller erstatning er begrenset til reparasjon eller utskifting med
+            produktene som er tilgjengelige på tidspunktet for reparasjonen
+            eller utskiftingen. Videre begrenses garantien til reparasjon eller
+            utskifting av bare det spesifikke produktet som svikter på grunn av
+            en produksjonsfeil. Ethvert reparert eller erstattet produkt forblir
+            underlagt garantiperioden, og enhver reparasjon eller erstatning
+            forlenger ikke den opprinnelige garantiperioden på noen måte eller
+            starter en ny garantiperiode.
+          </p>
+          <p>
+            Garantien dekker følgende tilfeller av fabrikasjonsfeil ved
+            Produktet:
+          </p>
+          <ul>
+            <li>
+              Uvanlig misfarging som ikke skyldes alminnelig falming over tid
+              og/eller som følge av ytre på kjenning
+            </li>
+            <li>Sprekk- og revnedannelse som ikke skyldes ytre påvirkning</li>
+            <li>Blemming i produktet som ikke skyldes ytre påvirkning</li>
+          </ul>
+          <p>
+            Garantien dekker kun produksjonsfeil ved Produktet, hvilket ikke
+            innbefatter feil forårsaket av manglende samsvar med Selskapets
+            veiledning for vedlikehold eller andre instruksjoner om håndtering
+            av Produktet. Slike feil inkluderer, men er ikke begrenset til:
+            fysisk misbruk av Produktet, kjemisk misbruk av Produktet (f.eks.
+            harde rengjøringsmidler og løsemidler), termisk misbruk av produktet
+            (f.eks. overdreven varme eller kulde) eller feil lagring,
+            installasjon, håndtering og/eller bruk av Produktet. Garantien
+            dekker videre ikke skader som oppstår som følge av ulykker,
+            steinsprutskader, normal slitasje, eller forsettlig skade av noe
+            slag.
           </p>
 
-          <h3>2.7 Avsluttende bestemmelser</h3>
+          <h3>2.5 Chrome Delete</h3>
+          <h4>2.5.1 Chrome Delete - Vedlikehold</h4>
           <p>
-            Disse leveringsvilkårene utgjør hele avtalen mellom deg som kjøper
-            og Nano Detailing AS som selger, med mindre annet er skriftlig
-            avtalt mellom partene. Eventuelle endringer eller tillegg til disse
-            vilkårene må være skriftlig for å være gyldige. Dersom enkelte
-            bestemmelser i disse vilkårene blir kjent ugyldige eller ikke kan
-            håndheves, påvirker det ikke gyldigheten eller håndhevelsen av de
-            gjenværende bestemmelsene.
+            Bilen skal ikke vaskes første 48 timer etter installasjonen <br />{" "}
+            <br /> Unngå direkte sprut med høytrykksspyler mot endestykkene av
+            folien. <br /> <br />
+            Ved bruk av høytrykkspyler må utløpet holdes minst en meter fra
+            overflaten. <br /> <br /> Bruk ikke voks med pigmenter, slipevoks
+            eller voks som inneholder nafta eller parafin. <br /> <br /> Bruk
+            ikke slipeputer, eller sterke kjemikalier på folien Folien bør
+            vokses minst hver 6. måned med kompatibel voks. <br /> <br />{" "}
+            Flekker fjernes umiddelbart. Vanskelige flekker kan fjernes med
+            isopropylalkohol. Skitt og flekker som las ligge på folien kan
+            medføre avfarging av denne dersom de ikke fjernes umiddelbart.{" "}
+            <br /> <br /> Unngå rengjøring i direkte sollys, eller ved høye
+            temperaturer
           </p>
 
+          <h4>2.5.2 Chrome Delete - Garanti</h4>
           <p>
-            Takk for at du har valgt Nano Detailing AS. Vi ser frem til å
-            betjene deg og ta vare på dine bilpleiebehov.
+            Selskapet garanterer at det i en periode på fem (5) år
+            (“Garantiperioden”) fra datoen for den første installasjonen, at
+            Selskapet vil dekke feil på chrome delete (Produktet) som:
+            misfarging, sprekker, blemmer og delaminering. <br /> <br /> Denne
+            garantien gjelder bare for Produktet som er installert av Selskapet,
+            og gjelder kun så lenge kjøperen er eier av bilen som har få tt
+            produktet. Garantien er personlig for kjøper, og kan ikke overdras.
+            <br /> <br /> Dekning under denne garantien gis ved å gi selskapet
+            melding om at krav gjøres gjeldende under garantien, sammen med en
+            detaljert beskrivelse av den påståtte mangelen. Du må varsle
+            Selskapet skriftlig og oppgi navn, telefonnummer og adresse. <br />{" "}
+            <br /> Ved krav under garantien vil Selskapet, etter eget valg,
+            fjerne eller erstatte Produktet uten kostnad hvis Produktet svikter
+            eller ikke fungerer som garantert på grunn av en produksjonsfeil i
+            Garantiperioden. Dette med de forbehold som er angitt i denne
+            garantien.
+            <br /> <br /> Hvis selskapet velger å erstatte produktet, vil
+            selskapet la en installatør etter eget valg fjerne og bruke
+            produktet på nytt til områder som er bestemt av Selskapet etter eget
+            skjønn. Selskapet vil dekke deler og arbeidskraft. Utskifting av den
+            defekte filmen er det eneste rettsmiddelet for alle produkter som
+            dekkes av denne garanti. Selskapets forpliktelse til reparasjon
+            eller erstatning er begrenset til reparasjon eller utskifting med
+            produktene som er tilgjengelige på tidspunktet for reparasjonen
+            eller utskiftingen. Videre begrenses garantien til reparasjon eller
+            utskifting av bare det spesifikke produktet som svikter på grunn av
+            en produksjonsfeil. Ethvert reparert eller erstattet produkt forblir
+            underlagt garantiperioden, og enhver reparasjon eller erstatning
+            forlenger ikke den opprinnelige garantiperioden på noen måte eller
+            starter en ny garantiperiode.
+          </p>
+          <p>
+            Garantien dekker følgende tilfeller av fabrikasjonsfeil ved
+            Produktet:
+          </p>
+          <ul>
+            <li>
+              Uvanlig misfarging som ikke skyldes alminnelig falming over tid
+              og/eller som følge av ytre på kjenning
+            </li>
+            <li>Sprekk- og revnedannelse som ikke skyldes ytre påvirkning</li>
+            <li>Blemming i produktet som ikke skyldes ytre påvirkning</li>
+          </ul>
+
+          <p>
+            Garantien dekker kun produksjonsfeil ved Produktet, hvilket ikke
+            innbefatter feil forårsaket av manglende samsvar med Selskapets
+            veiledning for vedlikehold eller andre instruksjoner om håndtering
+            av Produktet. Slike feil inkluderer, men er ikke begrenset til:
+            fysisk misbruk av Produktet, kjemisk misbruk av Produktet (f.eks.
+            harde rengjøringsmidler og løsemidler), termisk misbruk av produktet
+            (f.eks. overdreven varme eller kulde) eller feil lagring,
+            installasjon, håndtering og/eller bruk av Produktet. Garantien
+            dekker videre ikke skader som oppstår som følge av ulykker,
+            steinsprutskader, normal slitasje, eller forsettlig skade av noe
+            slag.
           </p>
         </div>
       </main>

@@ -8,6 +8,8 @@ import {GiHealthIncrease} from "react-icons/gi"
 import {BsCheckAll, BsHandThumbsUpFill} from "react-icons/bs";
 import {GrMoney} from "react-icons/gr";
 import Link from "next/link";
+import {Button} from "@/shared/ui/button/Button";
+
 
 const PPFPage = () => {
   return (
@@ -35,7 +37,7 @@ const PPFPage = () => {
         url="https://www.youtube.com/embed/a9Bc3Ahpc6c?mute=1&autoplay=1&controls=0&showinfo=0&autohide=1&loop=1&playlist=a9Bc3Ahpc6c"
       />
 
-      <div className="max-w-[1300px] mx-auto sm:p-14 p-8 bg-white my-20 rounded-xl">
+      <div className="max-w-[1300px] mx-auto sm:p-14 p-8 bg-white lg:my-20 lg:rounded-xl">
         <div className="grid sm:grid-cols-2 grid-cols-1 sm:gap-20 gap-10  sm:py-14 py-8">
           <div>
             <h2 className="text-3xl py-3">
@@ -60,7 +62,7 @@ const PPFPage = () => {
                 alt="logo"
                 fill
                 style={{objectFit: "cover"}}
-                src={"/images/coating/coating4.webp"}
+                src={"/images/ppf/ppf1.webp"}
                 quality={75}
                 priority
                 className=""
@@ -75,7 +77,7 @@ const PPFPage = () => {
                 alt="logo"
                 fill
                 style={{objectFit: "cover"}}
-                src={"/images/coating/coating3.webp"}
+                src={"/images/ppf/ppf2.webp"}
                 quality={75}
                 priority
                 className=""
@@ -119,13 +121,14 @@ const PPFPage = () => {
           />
         </div>
 
-        <div className="flex justify-center items-center py-20">
-          <div className="basis-1/2 text-right">
+        <div className="flex flex-col-reverse justify-center items-center py-32">
+
+          <div className="basis-1/2 text-center">
             <h2 className="text-2xl  text-black">Vi tilbyr 10 års garanti</h2>
             <p>Om det skulle skje noen misfarging, sprekker, blemmer eller delaminering, vil vi dekke feilene!</p>
             <Link href={'/betingelser'} className="text-red-500">Se betingelsene her</Link>
           </div>
-          <div className="relative basis-1/2 min-h-[300px]">
+          <div className="relative basis-1/2 min-w-[70vw] min-h-[300px]">
             <Image
               alt="logo"
               fill
@@ -138,10 +141,72 @@ const PPFPage = () => {
           </div>
         </div>
 
+        <div className="py-10 text-center flex flex-col items-center px-10 relative">
+          <h2 className="text-black">Google anmeldelser</h2>
+          <div className="relative w-full h-52">
+            <Image
+              alt="reviewscore"
+              fill
+              style={{objectFit: "contain"}}
+              src={"/images/reviews/google-reviews.png"}
+              quality={75}
+              priority
+              className=""
+            />
+          </div>
+
+          <div className="flex flex-col">
+            <div className="relative w-96 h-32">
+              <Image
+                alt="reviews"
+                fill
+                style={{objectFit: "contain"}}
+                src={"/images/reviews/1.png"}
+                quality={75}
+                priority
+                className=""
+              />
+            </div>
+            <div className="relative w-96 h-32">
+              <Image
+                alt="reviews"
+                fill
+                style={{objectFit: "contain"}}
+                src={"/images/reviews/6.png"}
+                quality={75}
+                priority
+                className=""
+              />
+            </div>
+            <div className="relative w-96 h-32">
+              <Image
+                alt="reviews"
+                fill
+                style={{objectFit: "contain"}}
+                src={"/images/reviews/5.png"}
+                quality={75}
+                priority
+                className=""
+              />
+            </div>
+            <div className="relative w-96 h-32">
+              <Image
+                alt="reviews"
+                fill
+                style={{objectFit: "contain"}}
+                src={"/images/reviews/4.png"}
+                quality={75}
+                priority
+                className=""
+              />
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <div className="px-8">
-        <h2 className="text-3xl py-3 text-center">Kontakt</h2>
+      <div className="px-5">
+        <h2 id="contact" className="text-3xl px-3 pt-20 text-center">Kontakt</h2>
         <ContactForm/>
       </div>
     </>

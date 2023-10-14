@@ -17,11 +17,11 @@ const ServiceModalContent = () => {
         ? Object.keys(services[currentServiceModal]!.content).map((p) => {
               if (p) {
                   return (
-                      <p key={p}>
+                      <p key={p} className={"text-white"}>
                           {currentServiceModal &&
                               (
                                   services[currentServiceModal]!
-                                      .content as ServiceBodyContent
+                                      .content
                               )[p]}
                       </p>
                   );

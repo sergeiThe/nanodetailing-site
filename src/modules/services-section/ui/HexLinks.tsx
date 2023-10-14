@@ -28,7 +28,7 @@ const HexLinks = () => {
                 className={`md:top-[90px] top-[55px] md:right-[0px] right-[0px]`}
                 image="volk2.png"
                 linkContent="PPF"
-                onClick={() => dispatch(open("ppf"))}
+                pageLink="/ppf"
             />
             <LinkHex
                 className={`md:top-[90px] top-[55px] md:right-[200px] right-[122px]`}

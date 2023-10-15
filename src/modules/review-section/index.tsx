@@ -19,8 +19,8 @@ const ReviewSection = () => {
       </div>
 
       <div className="flex flex-col gap-5 w-full">
-        {Array.from({length: 19}, (_, i) => (
-          <Review key={i} imgPath={`/images/reviews/${i+1}.webp`}/>
+        {Array.from({length: 21}, (_, i) => (
+          <Review key={i} imgPath={`/images/reviews/${i+2}.png`}/>
         ))}
 
 

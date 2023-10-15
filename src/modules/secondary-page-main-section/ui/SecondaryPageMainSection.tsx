@@ -1,4 +1,6 @@
+"use client"
 import Image from "next/image";
+import {motion as m} from "framer-motion"
 
 interface Props {
     title: string;
@@ -8,7 +10,11 @@ interface Props {
 
 const SecondaryPageMainSection = (props: Props) => {
     return (
-        <div className="bg-opacity-0 h-80 pt-10 flex flex-col justify-center gap-10 items-center relative">
+        <m.div
+          initial={{opacity: 0}}
+          animate={{opacity:1}}
+          transition={{duration: 0.4, ease: "easeOut", delay: 0.2}}
+          className="bg-opacity-0 h-80 pt-10 flex flex-col justify-center gap-10 items-center relative">
             {props.image && (
                 <Image
                     src={`/images/${props.image}`}
@@ -31,7 +37,7 @@ const SecondaryPageMainSection = (props: Props) => {
                 ></iframe>
             )}
             <h1 className="text-center text-white text-5xl">{props.title}</h1>
-        </div>
+        </m.div>
     );
 };
 

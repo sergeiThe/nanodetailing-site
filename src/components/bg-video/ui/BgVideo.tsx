@@ -1,5 +1,6 @@
+"use client"
 import { ReactNode } from "react";
-
+import {motion as m} from "framer-motion"
 interface Props {
     content: ReactNode;
     url: string;
@@ -7,7 +8,11 @@ interface Props {
 
 const BgVideo = (props: Props) => {
     return (
-        <div className="overflow-hidden sm:h-[400px] h-[300px] flex items-center">
+        <m.div
+          initial={{opacity: 0}}
+          animate={{opacity:1}}
+          transition={{duration: 1, ease: "easeOut", delay: 0.2}}
+          className="overflow-hidden sm:h-[400px] h-[300px] flex items-center">
             <div
                 className="relative overflow-hidden sm:min-w-full min-w-[200%] -translate-x-1/2 left-1/2  
             mx-auto min-h-full sm:pt-[57%] pt-[70%] bg-black bg-opacity-80"
@@ -25,7 +30,7 @@ const BgVideo = (props: Props) => {
                     {props.content}
                 </div>
             </div>
-        </div>
+        </m.div>
     );
 };
 

@@ -8,7 +8,7 @@ const GallerySection = () => {
       {Array.from({length: 7}, (_, i) => {
         return (
           <div className="basis-[300px] grow rounded-2xl overflow-hidden">
-            <ImageCover imgPath={`/images/polering/work${i +1}.webp`} alt={"polering work"} height={"h-52"}/>
+            <ImageCover key={i} imgPath={`/images/polering/work${i +1}.webp`} alt={"polering work"} height={"h-52"}/>
           </div>
         )
       })}

@@ -5,7 +5,7 @@ interface Props {
 }
 const Review = (props: Props) => {
   return (
-    <div className="relative basis-[150px] md:basis-[300px] shrink grow">
+    <div className="relative basis-[150px] md:basis-[200px] basis-[100px] shrink grow">
       <Image
         alt="reviews"
         fill

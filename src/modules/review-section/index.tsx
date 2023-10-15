@@ -4,8 +4,8 @@ import Review from "@/modules/review-section/components/review";
 
 const ReviewSection = () => {
   return(
-    <div className="py-10 text-center flex flex-col items-center px-10 relative">
-      <h2 className="text-black py-10">Google anmeldelser</h2>
+    <div className="py-10 text-center flex flex-col items-center px-10 relative max-w-[1000px] mx-auto bg-white my-20 rounded-xl">
+      <h2 className="text-black py-10">Hva folk sier om oss</h2>
       <div className="relative w-full h-40">
         <Image
           alt="reviewscore"

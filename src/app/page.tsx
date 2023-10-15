@@ -6,6 +6,7 @@ import { Header } from "@/modules/header";
 import { HeroSection } from "@/modules/hero-section";
 import { PricesSection } from "@/modules/prices-section";
 import { ServicesSection } from "@/modules/services-section";
+import ReviewSection from "@/modules/review-section";
 
 export default function Home() {
     return (
@@ -15,7 +16,8 @@ export default function Home() {
             <main className="min-h-screen">
                 <HeroSection />
                 <ServicesSection />
-                <PricesSection />
+                {/*<PricesSection />*/}
+                <ReviewSection/>
                 <CourseSection />
             </main>
         </>

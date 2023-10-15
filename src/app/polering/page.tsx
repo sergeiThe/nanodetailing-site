@@ -27,7 +27,7 @@ const PoleringPage = () => {
       </div>
       </div>
 
-      <div className="max-w-[1300px] mx-auto sm:p-14 p-8 lg:my-20 lg:rounded-xl">
+      <div className="max-w-[1300px] mx-auto px-3 sm:p-14 p-8 lg:my-20 lg:rounded-xl">
         <BenefitSection/>
         <GallerySection/>
         <ReviewSection/>

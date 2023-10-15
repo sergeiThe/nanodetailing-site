@@ -12,7 +12,7 @@ import {BsFillTelephoneFill, BsMessenger} from "react-icons/bs";
 import {AiFillMail} from "react-icons/ai";
 import {BiCurrentLocation} from "react-icons/bi";
 
-// TODO: Add contact information
+
 const ContactForm = () => {
   const [isSuccess, setIsSuccess] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState<boolean>(false);

@@ -4,7 +4,7 @@ import Review from "@/modules/review-section/components/review";
 
 const ReviewSection = () => {
   return(
-    <section className="py-10 text-center flex flex-col items-center sm:px-10 relative max-w-[1000px] mx-auto bg-white my-20 rounded-xl">
+    <section className="py-10 text-center flex flex-col items-center px-2 sm:px-10 relative max-w-[1000px] mx-auto bg-white my-20 rounded-xl">
       <h2 className="text-black py-10">Hva folk sier om oss</h2>
       <div className="relative w-full h-40">
         <Image

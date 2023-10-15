@@ -9,6 +9,7 @@ import {BsCheckAll, BsHandThumbsUpFill} from "react-icons/bs";
 import {GrMoney} from "react-icons/gr";
 import Link from "next/link";
 import {Button} from "@/shared/ui/button/Button";
+import ReviewSection from "@/modules/review-section";
 
 
 const PPFPage = () => {
@@ -141,67 +142,7 @@ const PPFPage = () => {
           </div>
         </div>
 
-        <div className="py-10 text-center flex flex-col items-center px-10 relative">
-          <h2 className="text-black">Google anmeldelser</h2>
-          <div className="relative w-full h-52">
-            <Image
-              alt="reviewscore"
-              fill
-              style={{objectFit: "contain"}}
-              src={"/images/reviews/google-reviews.png"}
-              quality={75}
-              priority
-              className=""
-            />
-          </div>
-
-          <div className="flex flex-col">
-            <div className="relative w-96 h-32">
-              <Image
-                alt="reviews"
-                fill
-                style={{objectFit: "contain"}}
-                src={"/images/reviews/1.png"}
-                quality={75}
-                priority
-                className=""
-              />
-            </div>
-            <div className="relative w-96 h-32">
-              <Image
-                alt="reviews"
-                fill
-                style={{objectFit: "contain"}}
-                src={"/images/reviews/6.png"}
-                quality={75}
-                priority
-                className=""
-              />
-            </div>
-            <div className="relative w-96 h-32">
-              <Image
-                alt="reviews"
-                fill
-                style={{objectFit: "contain"}}
-                src={"/images/reviews/5.png"}
-                quality={75}
-                priority
-                className=""
-              />
-            </div>
-            <div className="relative w-96 h-32">
-              <Image
-                alt="reviews"
-                fill
-                style={{objectFit: "contain"}}
-                src={"/images/reviews/4.png"}
-                quality={75}
-                priority
-                className=""
-              />
-            </div>
-          </div>
-        </div>
+        <ReviewSection/>
 
       </div>
 

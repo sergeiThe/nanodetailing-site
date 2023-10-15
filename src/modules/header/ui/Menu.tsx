@@ -8,7 +8,7 @@ const Menu = () => {
     <nav className="flex items-center justify-center py-2">
       <ul className="flex gap-8 justify-center select-none font-bold list-none">
         <MenuLink name="Tjenester" to="/#services" />
-        <MenuLink name="Priser" to="/#prices" />
+        {/*<MenuLink name="Priser" to="/#prices" />*/}
         <MenuLink name="Kurs" to="/#course" />
 
         <li className="list-none py-0 cursor-pointer hover:text-red-700">

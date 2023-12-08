@@ -109,7 +109,7 @@ const ServicesSection = () => {
             />
 
             <div className="max-w-[1300px] mx-auto">
-                <h2 className="text-5xl text-center">Services</h2>
+                <h2 className="text-5xl text-center">Tjenester</h2>
                 <p className="max-w-[700px] text-center mx-auto py-6">
                     Nanodetailing tilbyr førsteklasses kundeservice og en rekke
                     bilpleiealternativer å velge mellom. I tilfelle du har

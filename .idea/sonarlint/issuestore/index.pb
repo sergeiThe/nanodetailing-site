@@ -53,3 +53,5 @@ Z
 *src/modules/offer-section/OfferSection.tsx,6/0/60c9c9ed5516a7c788d91f9174890b282610373b
 b
 2src/modules/offer-section/components/OfferCard.tsx,7/a/7a10fee58f842109757a1e015f95dd35c62436d1
+O
+src/shared/ui/button/Button.tsx,1/b/1b667567df07a8d52c631a48964d9a3e7bcc2a5a

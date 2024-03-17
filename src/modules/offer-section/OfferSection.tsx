@@ -13,15 +13,13 @@ const OfferSection = () => {
     mx-auto lg:mt-20 p-10 lg:rounded-2xl">
       <h2 className="text-center pt-10 pb-20 text-5xl text-zinc-700">Våre tilbud</h2>
       <div className="flex flex-col md:flex-row gap-5 justify-center">
-        {/*
 
-        <OfferCard
-          discount={20}
-          title={"Keramisk coating"}
-          content={"Beskytt bilen og bevar bilens verdi"}
-          buttonCb={() => navigate.push('/coating')}
-        />*/
-        }
+          <OfferCard
+            discount={20}
+            title={"Keramisk coating"}
+            content={"Beskytt bilen og bevar bilens verdi"}
+            buttonCb={() => navigate.push('/coating')}
+          />
         <OfferCard
           warning={"Varer til 1. mai"}
           title={"Solfilm"}
@@ -30,14 +28,14 @@ const OfferSection = () => {
           ]}
           content={"Beskytt deg selv og dine passasjerer"}
           buttonCb={() => dispatch(open('solfilm'))}
-        />{/*
+        />
         <OfferCard
           discount={15}
           title={"Polering"}
           content={"Gjenoppliv glansen hos Nanodetailing"}
           buttonCb={() => navigate.push('/polering')}
         />
-        */}
+
 
       </div>
     </section>

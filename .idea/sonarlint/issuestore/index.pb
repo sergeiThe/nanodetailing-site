@@ -49,3 +49,7 @@ V
 .src/components/contact-form/ui/ContactForm.tsx,3/d/3d4b96b349c7d4b599845048499422c8d850f582
 K
 src/shared/ui/form/Form.tsx,c/7/c714053b7aa742cf78fc7873322a16ce3c58042f
+Z
+*src/modules/offer-section/OfferSection.tsx,6/0/60c9c9ed5516a7c788d91f9174890b282610373b
+b
+2src/modules/offer-section/components/OfferCard.tsx,7/a/7a10fee58f842109757a1e015f95dd35c62436d1

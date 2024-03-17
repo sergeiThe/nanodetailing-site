@@ -9,7 +9,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const commonStyle =
-  "flex gap-[6px] justify-center items-center  pt-2 pb-[10px] pl-6 pr-8  select-none my-2 ";
+  "flex gap-[6px] justify-center items-center  pt-2 pb-[10px] pl-6 pr-8  select-none my-2 rounded-lg";
 
 const btnVariants = {
   primary:

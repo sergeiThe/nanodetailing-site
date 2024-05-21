@@ -18,24 +18,23 @@ const OfferSection = () => {
       </h2>
       <div className="flex flex-col md:flex-row gap-5 justify-center">
         <OfferCard
-          discount={20}
           title={"Keramisk coating"}
+          list={["Kun 8799 kr!"]}
           content={"Beskytt bilen og bevar bilens verdi"}
           buttonCb={() => navigate.push("/coating")}
         />
         <OfferCard
-          warning={"Varer til 1. mai"}
           title={"Solfilm"}
           list={["A Stolpe - fra 5900 kr", "B Stolpe - fra 4900 kr"]}
           content={"Beskytt deg selv og dine passasjerer"}
           buttonCb={() => dispatch(open("solfilm"))}
         />
-        <OfferCard
+        {/*<OfferCard
           discount={15}
           title={"Polering"}
           content={"Gjenoppliv glansen hos Nanodetailing"}
           buttonCb={() => navigate.push("/polering")}
-        />
+        />*/}
       </div>
     </section>
   );
